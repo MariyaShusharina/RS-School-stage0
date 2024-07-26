@@ -86,11 +86,11 @@ header {
 	color: #CDCDCD;
 }
 
-.nav-link: hover {
+.nav-link:hover {
 	color: #FAFAFA;
 }
 
-.nav-link: active {
+.nav-link:active {
 	color: #FAFAFA;
 	border-bottom: 3px solid #F1CDB3;
 }
@@ -107,7 +107,7 @@ header {
 	color: #545454;
 }
 
-.h1-light: hover {
+.h1-light:hover {
 	color: #292929;
 }
 
@@ -188,11 +188,11 @@ header {
 	color: #545454;
 }
 
-.link-light: hover {
+.link-light:hover {
 	color: #292929;
 }
 
-.link-light: active {
+.link-light:active {
 	color: #545454;
 	border-bottom: 3px solid #F1CDB3;
 }
@@ -225,7 +225,7 @@ header {
 	background: #F1CDB3;
 }
 
-.button-primary: hover {
+.button-primary:hover {
 	background: #FDDCC4;
 }
 
@@ -238,7 +238,7 @@ header {
 	border: 2px solid #F1CDB3;
 }
 
-.button-secondary: hover {
+.button-secondary:hover {
 	background: #FDDCC4;
 }
 
@@ -265,12 +265,12 @@ header {
 	border: 2px solid #F1CDB3
 }
 
-.button-paginator: active {
+.button-paginator:active {
 	padding: 14px 0px 15px 0px;
 	background: #F1CDB3;
 }
 
-.button-paginator: inactive {
+.button-paginator:inactive {
 	padding: 14px 13px 15px 12px;
 	border: 2px solid #CDCDCD
 }
