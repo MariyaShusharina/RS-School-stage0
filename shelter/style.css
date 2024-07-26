@@ -81,6 +81,7 @@ header {
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
+	border: 0;
 	transition: all 0.2s;
 	color: #CDCDCD;
 }
