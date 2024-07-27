@@ -61,7 +61,7 @@ header {
 	color: #F1CDB3;
 }
 
-.h1-dark: hover {
+.h1-dark:hover {
 	color: #FDDCC4;
 }
 
@@ -251,7 +251,7 @@ header {
 	border: 2px solid #F1CDB3
 }
 
-.modal-close-button: hover {
+.modal-close-button:hover {
 	background: #FDDCC4;
 }
 
