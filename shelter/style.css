@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -12,7 +16,6 @@ body {
 
 a {
 	text-decoration: none;
-	transition: color 0.2s;
 	cursor: pointer;
 }
 
@@ -21,15 +24,49 @@ a {
 main {
 	background-image: url("./assets/img/header-bg.png");
 	background-color: #262425;
+	padding: 0 40px;
+	display: grid;
 }
 
 header {
 	
 }
 
+.left-container {
+	float: left;
+}
+
 .container {
 	max-width: 1440px;
+	margin: 0;
+}
+
+.container-elem-centered {
+	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.container-not-only {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content-not-only {
+	min-width: 460px;
+	max-width: 460px;
+	heght: 322px;
+}
+
+.heading-not-only {
+	max-width: 310px;
+}
+
+.img-not-only {
+	display: inline-block;
+	max-width: 60%;
+	max-height: auto;
+	float: right;
 }
 
 .nav {
@@ -46,12 +83,6 @@ header {
 	list-style: none;
 }
 
-.section {
-	
-}
-
-
-
 .h1-dark {
 	font-family: Georgia;
 	font-size: 32px;
@@ -62,7 +93,7 @@ header {
 	color: #F1CDB3;
 }
 
-.h1-dark: hover {
+.h1-dark:hover {
 	color: #FDDCC4;
 }
 
@@ -76,22 +107,47 @@ header {
 	color: #FFFFFF;
 }
 
-.nav-link {
+.h2-not-only {
+	font-family: Georgia;
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 57.2px;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.p-not-only {
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
 	color: #CDCDCD;
+
 }
 
-.nav-link: hover {
+.nav-link {
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	border: 0;
+	transition: color 0.2s;
+	color: #CDCDCD;
+}
+
+.nav-link:hover {
 	color: #FAFAFA;
 }
 
-.nav-link: active {
+.nav-link:active {
 	color: #FAFAFA;
 	border-bottom: 3px solid #F1CDB3;
+}
+
+.elem-right {
+	float: right;
 }
 
 
@@ -106,7 +162,7 @@ header {
 	color: #545454;
 }
 
-.h1-light: hover {
+.h1-light:hover {
 	color: #292929;
 }
 
@@ -187,11 +243,11 @@ header {
 	color: #545454;
 }
 
-.link-light: hover {
+.link-light:hover {
 	color: #292929;
 }
 
-.link-light: active {
+.link-light:active {
 	color: #545454;
 	border-bottom: 3px solid #F1CDB3;
 }
@@ -215,29 +271,37 @@ header {
 
 
 
+.btn {
+	margin: 15px;
+	font-family: Georgia;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: #292929;
+}
+
 .button-primary {
-	width: Hug (207px)px;
-	height: Hug (52px)px;
-	padding: 15px 45px 15px 45px;
+	width: 207px;
+	line-height: 52px;
 	gap: 10px;
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 100px;
 	background: #F1CDB3;
 }
 
-.button-primary: hover {
+.button-primary:hover {
 	background: #FDDCC4;
 }
 
 .button-secondary {
-	width: Hug (207px)px;
-	height: Hug (52px)px;
-	padding: 15px 45px 15px 45px;
+	width: 207px;
+	line-height: 52px;
 	gap: 10px;
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 100px;
 	border: 2px solid #F1CDB3;
 }
 
-.button-secondary: hover {
+.button-secondary:hover {
 	background: #FDDCC4;
 }
 
@@ -245,12 +309,12 @@ header {
 
 .modal-close-button {
 	width: 52px;
-	height: 52px;
-	border-radius: 100px 0px 0px 0px;
+	line-height: 52px;
+	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
 
-.modal-close-button: hover {
+.modal-close-button:hover {
 	background: #FDDCC4;
 }
 
@@ -258,19 +322,16 @@ header {
 
 .button-paginator {
 	width: 52px;
-	height: 52px;
-	padding: 14px 0px 15px 0px;
-	border-radius: 100px 0px 0px 0px;
+	line-height: 52px;
+	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
 
-.button-paginator: active {
-	padding: 14px 0px 15px 0px;
+.button-paginator:active {
 	background: #F1CDB3;
 }
 
-.button-paginator: inactive {
-	padding: 14px 13px 15px 12px;
+.button-paginator:inactive {
 	border: 2px solid #CDCDCD
 }
 
@@ -291,16 +352,29 @@ footer {
 	background-color: #262425;
 }
 
-.footer-text {
-	
+.footer-h3 {
+	font-family: Georgia;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 45.5px;
+	letter-spacing: 0.06em;
+	text-align: left;
+	color: #FFFFFF;
 }
 
 .footer-link {
-	
+	font-family: Georgia;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.06em;
+	text-align: left;
+	color: #F1CDB3;
+	transition: color 0.2s;
 }
 
 .footer-link:hover {
-	
+	color: #FDDCC4;
 }
 
 .footer-container {
