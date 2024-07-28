@@ -269,6 +269,7 @@ header {
 
 
 .btn {
+	margin: 15px;
 	font-family: Georgia;
 	font-size: 17px;
 	font-weight: 400;
