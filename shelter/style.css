@@ -41,6 +41,18 @@ header {
 	margin: 0 auto;
 }
 
+.container-not-only {
+	display: flex;
+	flex-wrap: wrap;
+
+.content-not-only {
+	width: 460px;
+	heght: 322;
+}
+
+.heading-not-only {
+	max-width: 310px;
+
 .nav {
 	float: right;
 }
