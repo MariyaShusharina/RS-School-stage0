@@ -255,6 +255,16 @@ header {
 
 
 
+button {
+	font-family: Georgia;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 22.1px;
+	letter-spacing: 0.06em;
+	text-align: left;
+	color: #292929;
+}
+
 .button-primary {
 	width: Hug (207px)px;
 	height: Hug (52px)px;
