@@ -24,7 +24,7 @@ main {
 }
 
 header {
-	margin: 0;
+	
 }
 
 .left-container {
@@ -44,6 +44,7 @@ header {
 .container-not-only {
 	display: flex;
 	flex-wrap: wrap;
+}
 
 .content-not-only {
 	width: 460px;
