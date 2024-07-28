@@ -23,10 +23,8 @@ main {
 }
 
 header {
-	margin: 30px 40px;
+	margin: 0 40px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 .container {
