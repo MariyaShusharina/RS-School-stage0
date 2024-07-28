@@ -25,6 +25,7 @@ main {
 	background-image: url("./assets/img/header-bg.png");
 	background-color: #262425;
 	padding: 0 40px;
+	display: grid;
 }
 
 header {
