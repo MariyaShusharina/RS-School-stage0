@@ -267,14 +267,14 @@ button {
 	font-weight: 400;
 	line-height: 22.1px;
 	letter-spacing: 0.06em;
-	text-align: left;
+	text-align: center;
 	color: #292929;
 }
 
 .button-primary {
 	width: 207px;
 	height: 52px;
-	padding: 15px 45px 15px 45px;
+	padding: 15px 10px;
 	gap: 10px;
 	border-radius: 100px;
 	background: #F1CDB3;
@@ -287,7 +287,7 @@ button {
 .button-secondary {
 	width: 207px;
 	height: 52px;
-	padding: 15px 45px 15px 45px;
+	padding: 15px 10px;
 	gap: 10px;
 	border-radius: 100px;
 	border: 2px solid #F1CDB3;
@@ -315,13 +315,13 @@ button {
 .button-paginator {
 	width: 52px;
 	height: 52px;
-	padding: 14px 0px 15px 0px;
+	padding: 15px 0;
 	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
 
 .button-paginator:active {
-	padding: 14px 0px 15px 0px;
+	padding: 15px 0px;
 	background: #F1CDB3;
 }
 
