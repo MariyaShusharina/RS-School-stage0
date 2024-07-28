@@ -54,12 +54,6 @@ header {
 	list-style: none;
 }
 
-.section {
-	
-}
-
-
-
 .h1-dark {
 	font-family: Georgia;
 	font-size: 32px;
@@ -121,6 +115,10 @@ header {
 .nav-link:active {
 	color: #FAFAFA;
 	border-bottom: 3px solid #F1CDB3;
+}
+
+.elem-right {
+	float: right;
 }
 
 
