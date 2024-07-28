@@ -20,10 +20,11 @@ a {
 main {
 	background-image: url("./assets/img/header-bg.png");
 	background-color: #262425;
+	margin: 0 40px;
 }
 
 header {
-	margin: 0 40px;
+	
 }
 
 .left-container {
