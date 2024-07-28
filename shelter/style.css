@@ -272,11 +272,11 @@ button {
 }
 
 .button-primary {
-	width: Hug (207px)px;
-	height: Hug (52px)px;
+	width: 207px;
+	height: 52px;
 	padding: 15px 45px 15px 45px;
 	gap: 10px;
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 100px;
 	background: #F1CDB3;
 }
 
@@ -285,11 +285,11 @@ button {
 }
 
 .button-secondary {
-	width: Hug (207px)px;
-	height: Hug (52px)px;
+	width: 207px;
+	height: 52px;
 	padding: 15px 45px 15px 45px;
 	gap: 10px;
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 100px;
 	border: 2px solid #F1CDB3;
 }
 
@@ -302,7 +302,7 @@ button {
 .modal-close-button {
 	width: 52px;
 	height: 52px;
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
 
@@ -316,7 +316,7 @@ button {
 	width: 52px;
 	height: 52px;
 	padding: 14px 0px 15px 0px;
-	border-radius: 100px 0px 0px 0px;
+	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
 
