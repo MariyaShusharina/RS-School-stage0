@@ -51,7 +51,7 @@ header {
 }
 
 .content-not-only {
-	width: 460px;
+	min-width: 460px;
 	heght: 322px;
 }
 
