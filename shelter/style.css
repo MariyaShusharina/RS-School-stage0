@@ -49,6 +49,7 @@ header {
 .container-not-only {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .content-not-only {
