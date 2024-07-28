@@ -273,7 +273,6 @@ header {
 
 .button-primary {
 	width: 207px;
-	padding: 15px 40px;
 	line-height: 52px;
 	gap: 10px;
 	border-radius: 100px;
@@ -286,7 +285,6 @@ header {
 
 .button-secondary {
 	width: 207px;
-	padding: 15px 10px;
 	line-height: 52px;
 	gap: 10px;
 	border-radius: 100px;
@@ -314,19 +312,16 @@ header {
 
 .button-paginator {
 	width: 52px;
-	height: 52px;
-	padding: 15px 0;
+	line-height: 52px;
 	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
 
 .button-paginator:active {
-	padding: 15px 0px;
 	background: #F1CDB3;
 }
 
 .button-paginator:inactive {
-	padding: 14px 13px 15px 12px;
 	border: 2px solid #CDCDCD
 }
 
