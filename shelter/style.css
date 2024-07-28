@@ -266,7 +266,6 @@ header {
 	font-family: Georgia;
 	font-size: 17px;
 	font-weight: 400;
-	line-height: 22.1px;
 	letter-spacing: 0.06em;
 	text-align: center;
 	color: #292929;
@@ -274,8 +273,8 @@ header {
 
 .button-primary {
 	width: 207px;
-	height: 52px;
 	padding: 15px 40px;
+	line-height: 52px;
 	gap: 10px;
 	border-radius: 100px;
 	background: #F1CDB3;
@@ -287,8 +286,8 @@ header {
 
 .button-secondary {
 	width: 207px;
-	height: 52px;
 	padding: 15px 10px;
+	line-height: 52px;
 	gap: 10px;
 	border-radius: 100px;
 	border: 2px solid #F1CDB3;
@@ -302,7 +301,7 @@ header {
 
 .modal-close-button {
 	width: 52px;
-	height: 52px;
+	line-height: 52px;
 	border-radius: 100px;
 	border: 2px solid #F1CDB3
 }
