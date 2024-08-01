@@ -23,6 +23,8 @@ a {
 
 main {
 	background-image: url("./assets/img/header-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	background-color: #262425;
 	padding: 0 40px;
 	display: grid;
