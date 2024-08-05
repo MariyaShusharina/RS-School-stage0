@@ -61,7 +61,6 @@ header {
 
 .content-not-only {
 	min-width: 460px;
-	max-width: 460px;
 	heght: 322px;
 }
 
@@ -71,7 +70,6 @@ header {
 
 .img-not-only {
 	display: inline-block;
-	max-width: 60%;
 	max-height: auto;
 	float: right;
 }
