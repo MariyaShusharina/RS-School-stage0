@@ -45,7 +45,7 @@ header {
 
 .container-logo {
 	position: relative;
-	top: -9px;
+	top: -11px;
 }
 
 .container-elem-centered {
@@ -105,6 +105,7 @@ header {
 }
 
 .logo-sub-dark {
+	margin-block-start: -13px;
 	font-family: Arial;
 	font-size: 13px;
 	font-weight: 400;
