@@ -44,7 +44,7 @@ header {
 }
 
 .container-logo {
-	padding-top: 9px;
+	padding-top: -9px;
 }
 
 .container-elem-centered {
