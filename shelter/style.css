@@ -22,9 +22,8 @@ a {
 
 
 main {
-	background-image: url("./assets/img/header-bg.png");
-	background-repeat: no-repeat;
-	background-position: center;
+	background-image: url("./assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+	background-repeat: repeat;
 	background-color: #262425;
 	padding: 0 40px;
 	display: grid;
