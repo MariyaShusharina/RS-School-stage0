@@ -163,7 +163,7 @@ header {
 .nav-link-active::after {
 	content: '';
 	position: absolute;
-	top: 4px;
+	top: 21px;
 	left: 0;
 	width: 114px;
 	height: 3px;
