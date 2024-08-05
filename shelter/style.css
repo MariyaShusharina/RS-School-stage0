@@ -70,6 +70,7 @@ header {
 }
 
 .img-not-only {
+	object-fit: contain;
 	float: right;
 	flex-shrink: 2;
 }
