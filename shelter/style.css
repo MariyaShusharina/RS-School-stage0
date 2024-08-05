@@ -161,12 +161,12 @@ header {
 
 .nav-link-active::before {
 	content: '';
-	position: absolute;
-	background-color: #F1CDB3;
+	position: relative;
+	top: 4;
+	left: 0;
 	width: 114px;
 	height: 3px;
-	top: 0;
-	left: 0;
+	background-color: #F1CDB3;
 }
 
 .elem-right {
