@@ -55,7 +55,7 @@ header {
 .container-not-only {
 	max-height: 728px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 }
 
