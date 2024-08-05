@@ -69,9 +69,8 @@ header {
 }
 
 .img-not-only {
-	display: inline-block;
-	max-height: auto;
 	float: right;
+	flex-shrink: 2;
 }
 
 .nav {
