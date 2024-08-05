@@ -67,6 +67,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-evenly;
+	gap: 50px;
 	flex-shrink: 1;
 }
 
