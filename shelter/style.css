@@ -54,6 +54,7 @@ header {
 }
 
 .container-not-only {
+	max-height: 728px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -62,6 +63,7 @@ header {
 .content-not-only {
 	min-width: 460px;
 	height: 322px;
+	flex-shrink: 1;
 }
 
 .heading-not-only {
