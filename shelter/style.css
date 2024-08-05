@@ -160,7 +160,7 @@ header {
 	color: #FAFAFA;
 }
 
-.nav-link-active::before {
+.nav-link-active::after {
 	content: '';
 	position: absolute;
 	top: 4px;
