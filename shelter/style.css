@@ -43,6 +43,10 @@ header {
 	margin: 0;
 }
 
+.container-logo {
+	margin-top: 9px;
+}
+
 .container-elem-centered {
 	max-width: 1440px;
 	margin: 0 auto;
