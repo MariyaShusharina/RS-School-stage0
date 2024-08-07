@@ -276,11 +276,11 @@ header {
 
 
 .about {
-	padding: 75px 40px;
+	padding: 65px 40px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 108px;
+	gap: 106px;
 }
 
 .about-content {
