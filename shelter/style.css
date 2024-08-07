@@ -408,10 +408,11 @@ footer {
 	background-color: #262425;
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .footer-h3 {
+	margin-top: 47px;
 	font-family: Georgia;
 	font-size: 35px;
 	font-weight: 400;
