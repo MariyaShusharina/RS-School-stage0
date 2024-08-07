@@ -59,6 +59,7 @@ header {
 	gap: 0 30px;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .content-not-only {
