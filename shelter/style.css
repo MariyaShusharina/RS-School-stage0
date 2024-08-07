@@ -406,6 +406,9 @@ footer {
 	background-image: url("./assets/img/noise_transparent_2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 	background-repeat: repeat;
 	background-color: #262425;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
 .footer-h3 {
@@ -434,6 +437,12 @@ footer {
 }
 
 .footer-container {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
+.link-container {
+	display: flex;
+	justify-content: space-between;
+}
