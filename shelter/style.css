@@ -254,7 +254,7 @@ header {
 }
 
 .p-large-light {
-	margin: 10px 0;
+	margin: 25px 0;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: 400;
@@ -276,11 +276,11 @@ header {
 
 
 .about {
-	margin: 102px 0;
+	margin: 59px 0;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 31px;
+	gap: 88px;
 }
 
 .about-content {
