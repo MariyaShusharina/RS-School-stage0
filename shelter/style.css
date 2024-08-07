@@ -219,6 +219,7 @@ header {
 }
 
 .h3-light {
+	margin: 50px 0;
 	font-family: Georgia;
 	font-size: 35px;
 	font-weight: 400;
@@ -249,6 +250,7 @@ header {
 }
 
 .p-large-light {
+	margin: 10px 0;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: 400;
@@ -268,6 +270,12 @@ header {
 }
 
 
+
+.about {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
 
 .about-content {
 	width: 430px;
