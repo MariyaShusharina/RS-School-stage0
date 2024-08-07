@@ -276,11 +276,11 @@ header {
 
 
 .about {
-	margin: 44px 0;
+	margin: 45px 0;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 104px;
+	gap: 112px;
 }
 
 .about-content {
