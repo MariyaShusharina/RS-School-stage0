@@ -63,6 +63,7 @@ header {
 }
 
 .content-not-only {
+	margin-top: -154px;
 	min-width: 460px;
 	height: 322px;
 	display: flex;
