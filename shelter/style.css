@@ -276,10 +276,10 @@ header {
 
 
 .about {
-	margin: 80px 0;
+	margin: 102px 0;
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	gap: 31px;
 }
 
