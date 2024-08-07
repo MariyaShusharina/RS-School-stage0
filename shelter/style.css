@@ -223,7 +223,7 @@ header {
 }
 
 .h3-light {
-	margin: 28px 0 25px;
+	margin: 33px 0 25px;
 	font-family: Georgia;
 	font-size: 35px;
 	font-weight: 400;
@@ -276,11 +276,11 @@ header {
 
 
 .about {
-	padding: 56px 40px;
+	padding: 51px 40px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 110px;
+	gap: 105px;
 }
 
 .about-content {
