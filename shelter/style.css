@@ -132,7 +132,8 @@ header {
 }
 
 .p-not-only {
-	margin: 10px 0;
+	margin-top: 6px;
+	margin-bottom: 17px;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: 400;
@@ -303,7 +304,7 @@ header {
 
 
 .btn {
-	margin: 15px;
+	margin: 0;
 	font-family: Georgia;
 	font-size: 17px;
 	font-weight: 400;
