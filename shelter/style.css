@@ -310,6 +310,7 @@ header {
 }
 
 
+
 .list-item {
 	width: 4px;
 	height: 4px;
@@ -327,6 +328,7 @@ header {
 }
 
 
+
 .in-addition {
 	padding: 50px 40px 60px;
 	display: flex;
@@ -339,6 +341,14 @@ header {
 .addition-content {
 	width: 380px;
 }
+
+.credit-card {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 20px;
+}
+
 
 
 .btn {
