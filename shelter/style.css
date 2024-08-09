@@ -234,6 +234,8 @@ header {
 }
 
 .h4-light {
+	margin: 0;
+	display: inline;
 	font-family: Georgia;
 	font-size: 20px;
 	font-weight: 400;
@@ -330,6 +332,7 @@ header {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
+	align-items: center;
 	gap: 30px;
 }
 
