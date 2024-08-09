@@ -343,10 +343,11 @@ header {
 }
 
 .credit-card {
+	padding: 15px 10px;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
 	border-radius: 9px;
 	background: #F1CDB3;
 }
