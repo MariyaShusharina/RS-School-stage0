@@ -347,6 +347,8 @@ header {
 	flex-wrap: nowrap;
 	align-items: center;
 	gap: 20px;
+	border-radius: 9px;
+	background: #F1CDB3;
 }
 
 
