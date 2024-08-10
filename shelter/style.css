@@ -286,7 +286,8 @@ header {
 
 .help {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	justify-content: center;
 	gap: 30px;
 }
