@@ -223,7 +223,7 @@ header {
 }
 
 .h3-light {
-	margin: 30px 0 25px;
+	margin: 19px 0;
 	font-family: Georgia;
 	font-size: 35px;
 	font-weight: 400;
@@ -246,6 +246,7 @@ header {
 }
 
 .h5-light {
+	margin: 20px 0;
 	font-family: Georgia;
 	font-size: 15px;
 	font-weight: 400;
@@ -266,6 +267,7 @@ header {
 }
 
 .p-small-light {
+	margin: 20px 0;
 	font-family: Arial;
 	font-size: 12px;
 	font-style: italic;
@@ -330,7 +332,7 @@ header {
 
 
 .in-addition {
-	padding: 50px 40px 35px;
+	padding: 63px 40px 79px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
