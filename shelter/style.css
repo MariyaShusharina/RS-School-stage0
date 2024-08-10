@@ -277,6 +277,33 @@ header {
 	color: #B2B2B2;
 }
 
+.h-center {
+	text-align: center;
+}
+
+
+
+
+.help {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.help-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 30px 50px;
+}
+
+.icon-div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
 
 
 .about {
