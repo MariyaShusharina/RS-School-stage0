@@ -336,6 +336,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
+	background: #F6F6F6;
 }
 
 .addition-content {
