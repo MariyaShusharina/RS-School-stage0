@@ -347,6 +347,7 @@ header {
 
 .credit-card {
 	padding: 10px 15px;
+	width: 320px;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
