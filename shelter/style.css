@@ -309,8 +309,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
-	gap: 50px;
+	align-items: center;
+	gap: 40px;
 }
 
 .fr-container {
