@@ -46,7 +46,9 @@
 	
 @media screen and (max-width: 321px) {
 	div, header, .friends, .nav, footer { max-width: 320px; }
-
+	
+	.no-br { display: none;}
+	
 	.pets { 
 		padding-top: 15px;
 		padding-bottom: 2px;
