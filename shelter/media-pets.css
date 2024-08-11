@@ -73,7 +73,7 @@
 	}
 	
 	.h3-light {
-		margin: 33px 0 17px
+		margin: 33px 0 17px;
 		font-family: Georgia;
 		font-size: 25px;
 		font-weight: 400;
@@ -103,15 +103,23 @@
 		text-align: center;
 	}
 
+	.footer {
+		padding: 40px 40px 0;
+		justify-content: flex-start;
+	}
+	
 	.footer-container {
- 		width: 278px;
+ 		width: 255px;
 		height: 208px;
+		align-items: center;
 
 	}
 
 	.footer-container2 {
-	width: 300px;
-	height: 222px;
+		width: 300px;
+		height: 222px;
+		padding-top: 12px;
+		align-items: center;
 
 	}
 }
