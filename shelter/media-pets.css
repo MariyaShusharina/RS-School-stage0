@@ -4,15 +4,22 @@
 
 @media screen and (max-width: 769px) {
 	div, .pets, .main, .nav, footer { max-width: 768px; }
+	
 	.main, .pets, footer {
         padding-left: 30px;
         padding-right: 30px;
 		min-width: 768px;
 	}
-  footer {
-      flex-wrap: wrap;
-      justify-content: center;
-  }
+	
+	.pets-cards {
+		min-width: 580px;
+		min-height: 1365px;
+	}
+	
+	footer {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 	
 @media screen and (max-width: 321px) {
