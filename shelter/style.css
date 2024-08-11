@@ -643,7 +643,11 @@ footer {
 @media screen and (max-width: 769px) {
 	div, header, .main, .nav, footer { max-width: 768px; }
 	.container-not-only { flex-direction: column; }
-	.content-not-only { justify-content: center; }
+	.content-not-only {
+		margin: -72px 10px 0 0;
+		justify-content: center;
+	}
+	.button-primary { align-self: center; }
 	.about { flex-direction: column-reverse; }
 	.in-addition { flex-direction: column-reverse; }
 	.img-not-only { 
