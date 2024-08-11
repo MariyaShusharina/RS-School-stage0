@@ -112,6 +112,7 @@
 	}
 
 	.footer-h3 {
+		margin: 0 3px 0 8px;
 		font-family: Georgia;
 		font-size: 25px;
 		font-weight: 400;
@@ -141,7 +142,7 @@
 	.footer-container2 {
 		width: 300px;
 		height: 222px;
-		margin: 0 -10px 12px;
+		margin: 0 -11px 12px;
 		padding-top: 12px;
 		gap: 40px;
 
