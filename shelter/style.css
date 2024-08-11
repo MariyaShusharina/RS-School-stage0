@@ -146,6 +146,7 @@ header {
 .p-not-only {
 	margin-top: 6px;
 	margin-bottom: 41px;
+	max-width: 460px;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: 400;
