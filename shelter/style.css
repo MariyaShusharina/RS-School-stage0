@@ -33,8 +33,13 @@ a {
 	display: grid;
 }
 
+.pets {
+	padding: 0 40px;
+}
+
 header {
 	max-width: 1440px;
+	padding: 0 40px;
 }
 
 .left-container {
@@ -206,6 +211,8 @@ header {
 }
 
 .logo-sub-light {
+	margin-block-start: -12px;
+	margin-left: 4px;
 	font-family: Arial;
 	font-size: 13px;
 	font-weight: 400;
