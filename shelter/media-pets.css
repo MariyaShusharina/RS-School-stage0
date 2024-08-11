@@ -46,7 +46,7 @@
 @media screen and (max-width: 321px) {
 	div, header, .friends, .nav, footer { max-width: 320px; }
 
-	.pets { padding-top: 31px; }
+	.pets { padding-top: 15px; }
 	
 	.nav {
 		display: none;
@@ -64,6 +64,11 @@
 		min-width: 300px;
 	}
 
+	.friends {
+		padding-top: 10px;
+		gap: 53px;
+	}
+	
 	.h3-light {
 		font-family: Georgia;
 		font-size: 25px;
