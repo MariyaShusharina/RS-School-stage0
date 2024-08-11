@@ -8,6 +8,10 @@
 	.nav {
 		max-width: 710px;
 	}
+
+	.container {
+		max-width: 708px;
+	}
 	
 	.friends, .pets, footer {
 		padding-left: 30px;
