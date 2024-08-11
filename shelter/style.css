@@ -508,10 +508,11 @@ header {
 
 .button-paginator {
 	width: 52px;
+	height: 52px;
 	line-height: 52px;
 	border-radius: 100px;
 	background: transparent;
-	border: 2px solid #F1CDB3
+	border: 2px solid #F1CDB3;
 }
 
 .button-paginator:active {
@@ -519,7 +520,7 @@ header {
 }
 
 .button-paginator:inactive {
-	border: 2px solid #CDCDCD
+	border: 2px solid #CDCDCD;
 }
 
 .button-paginator:hover {
