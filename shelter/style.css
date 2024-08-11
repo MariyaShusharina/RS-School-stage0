@@ -285,24 +285,26 @@ header {
 
 
 .help {
+	padding: 0 87px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 30px;
+	gap: 35px;
 }
 
 .help-icons {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	gap: 30px 50px;
+	gap: 80px 100px;
 }
 
 .icon-div {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	gap: 40px;
 }
 
 .icon {
