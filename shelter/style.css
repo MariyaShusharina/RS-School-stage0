@@ -544,6 +544,13 @@ header {
 
 
 
+.pagination {
+	margin-top: -5px;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 10px;
+}
+
 .button-paginator {
 	width: 52px;
 	height: 52px;
