@@ -86,7 +86,9 @@ header {
 }
 
 .img-not-only {
-	object-fit: contain;
+	background: url("./assets/img/start-screen-puppy.png");
+	background-repeat: norepeat;
+	max-width: 698px;
 }
 
 .nav {
@@ -633,7 +635,6 @@ footer {
 	.content-not-only { justify-content: center !important; }
 	.about { flex-direction: column-reverse !important; }
 	.in-addition { flex-direction: column-reverse !important; }
-	.img-not-only { width: 100% !important; }
 	
 }
 	
