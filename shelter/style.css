@@ -452,7 +452,7 @@ header {
 	right: 2px;
 
 	display: flex;
-	flex-derection: column;
+	flex-direction: column;
 	gap: 8px;
 }
 
