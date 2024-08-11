@@ -664,8 +664,8 @@ footer {
 	.img-not-only { 
 		max-width: 569px;
 		max-height: 593px;
-		min-width: 260px;
-		min-height: 272px;
+		min-width: 70vw;
+		min-height: auto;
 	}
 	
 }
@@ -674,6 +674,6 @@ footer {
 	div { max-width: 320px; }
 	}
 	.img-not-only { 
-		min-width: 260px;
-		min-height: 272px;
+		min-width: 80vw;
+		min-height: auto;
 	}
