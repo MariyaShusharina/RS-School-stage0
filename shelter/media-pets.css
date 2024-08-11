@@ -1,12 +1,12 @@
 @media screen and (min-width: 1280px) {
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
-	.burger { display: none; }
+	.burger { visibility: hidden; }
 }
 
 @media screen and (max-width: 769px) {
 	div, .pets, .friends { max-width: 768px; }
 
-	.burger { display: none; }
+	.burger { visibility: hidden; }
 	
 	.nav {
 		max-width: 710px;
@@ -65,7 +65,8 @@
 		position: absolute;
 		top: 30px;
 		right: 2px;
-		
+
+		visibility: visible;
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
