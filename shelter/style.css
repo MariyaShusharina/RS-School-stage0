@@ -23,6 +23,8 @@ a {
 	object-fit: contain;
 }
 
+.no-br { }
+
 
 
 .main {
@@ -339,6 +341,7 @@ header {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	gap: 90px;
+	overflow: hidden;
 }
 
 .pets-cards {
@@ -348,6 +351,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 0 30px;
+	overflow: hidden;
 }
 
 .card {
@@ -359,7 +363,6 @@ header {
 	align-items: center;
 	gap: 30px;
 	border-radius: 9px;
-	overflow: hidden;
 	background: #FAFAFA;
 	transition: 0.2s;
 	cursor: pointer;
@@ -438,6 +441,34 @@ header {
 	width: 58px;
 	height: 3px;
 	background-color: #F1CDB3;
+}
+
+
+
+.burger {
+	width: 30px;
+	height: 22px;
+	
+	position: absolute;
+	top: 49px;
+        right: 21px;
+
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.line-light {
+	width: 30px;
+	height: 2px;
+	color: #000000;
+}
+
+.line-dark {
+	width: 30px;
+	height: 2px;
+	color: #F1CDB3;
 }
 
 
@@ -582,12 +613,6 @@ header {
 	color: #292929;
 }
 
-.button-paginator:disabled {
-	border: 2px solid #CDCDCD;
-	background: transparent;
-	color: #CDCDCD;
-}
-
 .button-paginator:hover {
 	background: #FDDCC4;
 	border-color: #FDDCC4;
@@ -595,6 +620,12 @@ header {
 
 .button-paginator:active {
 	background: #F1CDB3;
+}
+
+.button-paginator:disabled {
+	border: 2px solid #CDCDCD;
+	background: transparent;
+	color: #CDCDCD;
 }
 
 
@@ -617,6 +648,13 @@ footer {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+}
+
+.footer-puppy {
+	width: 300px;
+	height: 310px;
+	background: url("./assets/img/footer-puppy.png");
+	background-repeat: no-repeat;
 }
 
 .footer-h3 {

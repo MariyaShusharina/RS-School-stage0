@@ -1,10 +1,13 @@
 @media screen and (min-width: 1280px) {
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
+	.burger { visibility: hidden; }
 }
 
 @media screen and (max-width: 769px) {
-	div, .pets, .friends, footer { max-width: 768px; }
+	div, .pets, .friends { max-width: 768px; }
 
+	.burger { visibility: hidden; }
+	
 	.nav {
 		max-width: 710px;
 	}
@@ -33,11 +36,116 @@
 	.pagination { margin-top: 0; }
 	
 	footer {
+		max-width: 748px;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
+		padding: 15px 30px 0;
+		gap: 28px 60px;
 	}
 }
 	
 @media screen and (max-width: 321px) {
 	div, header, .friends, .nav, footer { max-width: 320px; }
+	
+	.no-br { display: none;}
+	
+	.pets { 
+		padding-top: 15px;
+		padding-bottom: 2px;
+	 }
+	
+	.nav {
+		display: none;
+	}
+
+	.burger { 
+		width: 30px;
+		height: 22px;
+		
+		position: absolute;
+		top: 49px;
+        	right: 21px;
+
+		visibility: visible;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	
+	.container {
+		max-width: 300px;
+	}
+
+	.pets, footer {
+		padding-left: 20px;
+		padding-right: 20px;
+		min-width: 270px;
+	}
+
+	.friends {
+		padding: 10px 10px 0;
+		gap: 53px;
+		min-width: 270px;
+	}
+	
+	.h3-light {
+		margin: 33px 0 17px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
+
+	.pets-cards {
+		min-width: 270px;
+		max-width: 270px;
+		min-height: 1390px;
+		max-height: 1390px;
+		margin-top: -30px;
+		gap: 30px;
+	}
+
+	.pagination { 
+		gap: 9px;
+		margin: -37px 15px 40px;
+	}
+
+	.footer-h3 {
+		margin: 0 3px 0 8px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
+
+	.footer {
+		justify-content: flex-start;
+	}
+	
+	.footer-puppy {
+		width: 260px;
+		height: 269px;
+		margin: 0 10px;
+		background-size: contain;
+	}
+	
+	.footer-container {
+ 		width: 275px;
+		height: 208px;
+		align-items: center;
+
+	}
+	
+	.footer-container2 {
+		width: 300px;
+		height: 222px;
+		margin: 0 -11px 12px;
+		padding-top: 12px;
+		gap: 40px;
+
+	}
 }
