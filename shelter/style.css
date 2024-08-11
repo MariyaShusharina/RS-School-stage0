@@ -322,6 +322,7 @@ header {
 
 .fr-btn {
 	margin-top: 20px;
+	width: 210px !important;
 	padding: 0 25px;
 }
 
