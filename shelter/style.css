@@ -632,7 +632,7 @@ footer {
 }
 
 
-@media screen (max-width: 768px) and (min-width: 321px) {
+@media screen and (max-width: 768px) and (min-width: 321px) {
 	div, header, main, footer { max-width: 768px !important; }
 	.container-not-only { flex-direction: column !important; }
 	.content-not-only { justify-content: center !important; }
@@ -641,6 +641,6 @@ footer {
 	
 }
 	
-@media screen (max-width: 320px) {
+@media screen and (max-width: 320px) {
 	div { max-width: 320px !important; }
 }
