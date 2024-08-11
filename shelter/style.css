@@ -704,7 +704,8 @@ footer {
 	
 @media screen and (max-width: 321px) {
 	div { max-width: 320px; }
-	}
+	
 	.img-not-only {
 		max-width: 80vw;
 	}
+}
