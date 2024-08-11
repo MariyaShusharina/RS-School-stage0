@@ -3,7 +3,11 @@
 }
 
 @media screen and (max-width: 769px) {
-	div, .pets, .friends, .nav, footer { max-width: 768px; }
+	div, .pets, .friends, footer { max-width: 768px; }
+
+	.nav {
+		max-width: 710px;
+	}
 	
 	.friends, .pets, footer {
 		padding-left: 30px;
