@@ -2,7 +2,7 @@
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
 }
 
-@media screen and (max-width: 769px) {
+@media viewport and (max-width: 769px) {
 	div, .pets, .friends, .nav, footer { max-width: 768px; }
 	
 	.friends, .pets, footer {
