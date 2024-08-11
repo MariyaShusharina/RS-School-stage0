@@ -646,6 +646,10 @@ footer {
 	.content-not-only { justify-content: center; }
 	.about { flex-direction: column-reverse; }
 	.in-addition { flex-direction: column-reverse; }
+	.img-not-only { 
+		max-width: 569px;
+		max-height: auto;
+	}
 	
 }
 	
