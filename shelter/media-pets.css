@@ -4,7 +4,7 @@
 }
 
 @media screen and (max-width: 769px) {
-	div, .pets, .friends, footer { max-width: 768px; }
+	div, .pets, .friends { max-width: 768px; }
 
 	.burger { display: none; }
 	
@@ -36,6 +36,7 @@
 	.pagination { margin-top: 0; }
 	
 	footer {
+		max-width: 748px;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		padding: 15px 40px 0;
