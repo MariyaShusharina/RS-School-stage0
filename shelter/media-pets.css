@@ -6,8 +6,8 @@
 	div, .pets, .friends, .nav, footer { max-width: 768px; }
 	
 	.friends, .pets, footer {
-        padding-left: 30px;
-        padding-right: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		min-width: 768px;
 	}
 	
