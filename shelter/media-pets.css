@@ -69,9 +69,9 @@
 	}
 
 	.friends {
-		padding-top: 10px;
+		padding: 10px 10px 0;
 		gap: 53px;
-		min-width: 290px;
+		min-width: 270px;
 	}
 	
 	.h3-light {
