@@ -38,9 +38,9 @@
 	footer {
 		max-width: 748px;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 		padding: 15px 40px 0;
-		gap: 28px 0;
+		gap: 28px 60px;
 	}
 }
 	
