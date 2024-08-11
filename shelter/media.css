@@ -1,7 +1,10 @@
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 321px) {
 	div { max-width: 768px; }
 	.container-not-only { flex-direction: column; }
 	.content-not-only { justify-content: center; }
+	.about { flex-direction: column-reverse; }
+	.in-addition { flex-direction: column-reverse; }
+	
 }
 	
 @media (max-width: 320px) {
