@@ -647,7 +647,7 @@ footer {
 		margin: -72px 10px 0 0;
 		justify-content: center;
 	}
-	.button-primary { align-self: center; }
+	.make-friend { align-self: center; }
 	.about { flex-direction: column-reverse; }
 	.in-addition { flex-direction: column-reverse; }
 	.img-not-only { 
