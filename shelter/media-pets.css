@@ -88,5 +88,8 @@
 		gap: 30px;
 	}
 
-	.pagination { gap: 10px; }
+	.pagination { 
+		gap: 9px;
+		margin-top: -2px 0 -36px -10px;
+	}
 }
