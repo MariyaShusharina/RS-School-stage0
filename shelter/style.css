@@ -34,7 +34,7 @@ main {
 }
 
 header {
-	
+	max-width: 1440px;
 }
 
 .left-container {
@@ -88,7 +88,7 @@ header {
 }
 
 .nav {
-	
+	max-width: 1440px;
 }
 
 .nav-item {
