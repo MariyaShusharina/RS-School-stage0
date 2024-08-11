@@ -24,7 +24,11 @@
 		min-height: 1365px;
 		max-width: 580px;
 		max-height: 1365px;
+		margin-top: 10px;
+		gap: 30px;
 	}
+
+	.pagination { margin-top: 50px; }
 	
 	footer {
 		flex-wrap: wrap;
