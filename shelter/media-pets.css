@@ -56,7 +56,18 @@
 		display: none;
 	}
 
-	.burger { display: flex; }
+	.burger { 
+		width: 30px;
+		height: 22px;
+		
+		position: absolute;
+		top: 30px;
+		right: 2px;
+		
+		display: flex;
+		flex-derection: column;
+		gap: 8px;
+	}
 	
 	.container {
 		max-width: 300px;
