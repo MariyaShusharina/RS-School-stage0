@@ -85,9 +85,8 @@ header {
 }
 
 .img-not-only {
-	width: 698px;
-	height: 728px;
 	max-width: 698px;
+	max-height: 728px;
 	background: url("./assets/img/start-screen-puppy.png");
 	background-repeat: no-repeat;
 }
@@ -632,7 +631,7 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-	div, header, main, footer { max-width: 768px; }
+	div, header, .main, footer { max-width: 768px; }
 	.container-not-only { flex-direction: column; }
 	.content-not-only { justify-content: center; }
 	.about { flex-direction: column-reverse; }
