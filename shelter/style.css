@@ -443,6 +443,27 @@ header {
 
 
 
+.burger {
+	width: 30px;
+	height: 32px;
+	display: flex;
+	gap: 8px;
+}
+
+.line-light {
+	width: 30px;
+	height: 2px;
+	color: #000000;
+}
+
+.line-dark {
+	width: 30px;
+	height: 2px;
+	color: #F1CDB3;
+}
+
+
+
 .list-item {
 	width: 4px;
 	height: 4px;
