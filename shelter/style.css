@@ -79,7 +79,6 @@ header {
 	flex-wrap: wrap;
 	align-content: space-evenly;
 	gap: 0;
-	flex-shrink: 1;
 }
 
 .heading-not-only {
@@ -89,7 +88,6 @@ header {
 .img-not-only {
 	object-fit: contain;
 	float: right;
-	flex-shrink: 2;
 }
 
 .nav {
