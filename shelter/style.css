@@ -339,6 +339,7 @@ header {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	gap: 90px;
+	overflow: hidden;
 }
 
 .pets-cards {
@@ -348,6 +349,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 0 30px;
+	overflow: hidden;
 }
 
 .card {
@@ -359,7 +361,6 @@ header {
 	align-items: center;
 	gap: 30px;
 	border-radius: 9px;
-	overflow: hidden;
 	background: #FAFAFA;
 	transition: 0.2s;
 	cursor: pointer;
