@@ -85,8 +85,8 @@ header {
 }
 
 .img-not-only {
-	max-width: 698px;
-	max-height: 728px;
+	min-width: 698px;
+	min-height: 728px;
 	background: url("./assets/img/start-screen-puppy.png");
 	background-repeat: no-repeat;
 }
