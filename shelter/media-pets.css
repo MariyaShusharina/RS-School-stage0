@@ -1,10 +1,13 @@
 @media screen and (min-width: 1280px) {
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
+	.burger { display: none; }
 }
 
 @media screen and (max-width: 769px) {
 	div, .pets, .friends, footer { max-width: 768px; }
 
+	.burger { display: none; }
+	
 	.nav {
 		max-width: 710px;
 	}
@@ -46,6 +49,8 @@
 	.nav {
 		display: none;
 	}
+
+	.burger { display: flex; }
 	
 	.container {
 		max-width: 300px;
