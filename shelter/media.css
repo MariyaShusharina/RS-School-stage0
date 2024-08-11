@@ -4,6 +4,7 @@
 	.content-not-only { justify-content: center; }
 	.about { flex-direction: column-reverse; }
 	.in-addition { flex-direction: column-reverse; }
+	.img-not-only { width: 100% }
 	
 }
 	
