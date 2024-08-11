@@ -1,11 +1,11 @@
 @media screen and (min-width: 1280px) {
-	div, .pets, .main, .nav, footer { max-width: 1280px; }
+	div, .pets, .friends, .nav, footer { max-width: 1280px; }
 }
 
 @media screen and (max-width: 769px) {
-	div, .pets, .main, .nav, footer { max-width: 768px; }
+	div, .pets, .friends, .nav, footer { max-width: 768px; }
 	
-	.main, .pets, footer {
+	.friends, .pets, footer {
         padding-left: 30px;
         padding-right: 30px;
 		min-width: 768px;
@@ -23,5 +23,5 @@
 }
 	
 @media screen and (max-width: 321px) {
-	div, header, .main, .nav, footer { max-width: 320px; }
+	div, header, .friends, .nav, footer { max-width: 320px; }
 }
