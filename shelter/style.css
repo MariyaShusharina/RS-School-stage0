@@ -571,11 +571,12 @@ header {
 }
 
 .h4-pag-btn {
+	margin: 0;
 	padding: 10px 0;
 	font-family: Georgia;
 	font-size: 20px;
 	font-weight: 400;
-	line-height: 23px;
+	line-height: 30px;
 	letter-spacing: 0.06em;
 	text-align: center;
 	color: #292929;
