@@ -342,6 +342,8 @@ header {
 }
 
 .pets-cards {
+	min-width: 1200px;
+	min-height: 930px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
