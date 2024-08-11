@@ -35,6 +35,8 @@
 	footer {
 		flex-wrap: wrap;
 		justify-content: space-around;
+		padding: 15px 40px 0;
+		gap: 28px 0;
 	}
 }
 	
