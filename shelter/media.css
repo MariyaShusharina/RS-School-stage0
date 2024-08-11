@@ -1,12 +1,12 @@
 @media screen and (max-width: 768px) {
-	div, header, main, footer { max-width: 768px !important; }
-	.container-not-only { flex-direction: column !important; }
-	.content-not-only { justify-content: center !important; }
-	.about { flex-direction: column-reverse !important; }
-	.in-addition { flex-direction: column-reverse !important; }
+	div, header, main, footer { max-width: 768px; }
+	.container-not-only { flex-direction: column; }
+	.content-not-only { justify-content: center; }
+	.about { flex-direction: column-reverse; }
+	.in-addition { flex-direction: column-reverse; }
 	
 }
 	
 @media screen and (max-width: 320px) {
-	div { max-width: 320px !important; }
+	div { max-width: 320px; }
 }
