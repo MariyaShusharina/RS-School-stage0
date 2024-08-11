@@ -642,9 +642,13 @@ footer {
 
 @media screen and (max-width: 769px) {
 	div, header, .main, .nav, footer { max-width: 768px; }
+	.main { 
+		padding: 0 30px;
+		min-width: 768px;
+	}
 	.container-not-only { flex-direction: column; }
 	.content-not-only {
-		margin: -72px 10px 0 0;
+		margin: -72px 0 0 10px;
 		justify-content: center;
 	}
 	.make-friend { align-self: center; }
