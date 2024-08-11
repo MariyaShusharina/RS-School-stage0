@@ -569,6 +569,10 @@ header {
 	transition: 0.2s;
 }
 
+.h4-pag-btn {
+	padding: 10px 0;
+}
+
 .button-paginator:disabled {
 	border: 2px solid #CDCDCD;
 	background: transparent;
