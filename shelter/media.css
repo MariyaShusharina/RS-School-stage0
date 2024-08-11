@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
 	div { max-width: 768px; }
+	.container-not-only { flex-direction: column; }
+	.content-not-only { justify-content: center; }
 }
 	
 @media (max-width: 320px) {
