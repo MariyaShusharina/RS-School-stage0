@@ -286,7 +286,7 @@ header {
 
 
 .about {
-	padding: 65px 40px 90px;
+	padding: 65px 40px 87px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
@@ -304,7 +304,7 @@ header {
 
 
 .friends {
-	padding: 100px 40px 100px;
+	padding: 63px 40px 100px;
 	background: #F6F6F6;
 	display: flex;
 	flex-direction: column;
@@ -327,13 +327,12 @@ header {
 .cards {
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: spase-between;
+	justify-content: space-between;
 }
 
 .card {
 	width: 270px;
 	height: 435px;
-	padding-bottom: 30px;
 	gap: 30px;
 	border-radius: 9px;
 	overflow: hidden;
@@ -510,7 +509,6 @@ header {
 .button-paginator {
 	width: 52px;
 	height: 52px;
-	line-height: 52px;
 	border-radius: 100px;
 	background: transparent;
 	border: 2px solid #F1CDB3;
