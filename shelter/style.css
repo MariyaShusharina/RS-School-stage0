@@ -550,19 +550,22 @@ header {
 	border-radius: 100px;
 	background: transparent;
 	border: 2px solid #F1CDB3;
+	transition: 0.2s;
 }
 
-.button-paginator:active {
-	background: #F1CDB3;
-}
-
-.button-paginator:inactive {
+.button-paginator:disabled {
 	border: 2px solid #CDCDCD;
+	background: transparent;
+	color: #CDCDCD;
 }
 
 .button-paginator:hover {
 	background: #FDDCC4;
 	border-color: #FDDCC4;
+}
+
+.button-paginator:active {
+	background: #F1CDB3;
 }
 
 
