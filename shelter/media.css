@@ -1,13 +1,13 @@
 @media screen (max-width: 768px) and (min-width: 321px) {
-	div, header, main, footer { max-width: 768px; }
-	.container-not-only { flex-direction: column; }
-	.content-not-only { justify-content: center; }
-	.about { flex-direction: column-reverse; }
-	.in-addition { flex-direction: column-reverse; }
-	.img-not-only { width: 100% }
+	div, header, main, footer { max-width: 768px !important; }
+	.container-not-only { flex-direction: column !important; }
+	.content-not-only { justify-content: center !important; }
+	.about { flex-direction: column-reverse !important; }
+	.in-addition { flex-direction: column-reverse !important; }
+	.img-not-only { width: 100% !important; }
 	
 }
 	
 @media screen (max-width: 320px) {
-	div { max-width: 320px; }
+	div { max-width: 320px !important; }
 }
