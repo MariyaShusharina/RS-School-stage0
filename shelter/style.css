@@ -404,6 +404,7 @@ header {
 }
 
 .link-light-active {
+	position: relative;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: 400;
