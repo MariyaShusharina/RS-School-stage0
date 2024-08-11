@@ -1,8 +1,8 @@
-@media viewport and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
 }
 
-@media viewport and (max-width: 769px) {
+@media screen and (max-width: 769px) {
 	div, .pets, .friends, .nav, footer { max-width: 768px; }
 	
 	.friends, .pets, footer {
@@ -24,6 +24,6 @@
 	}
 }
 	
-@media viewport and (max-width: 321px) {
+@media screen and (max-width: 321px) {
 	div, header, .friends, .nav, footer { max-width: 320px; }
 }
