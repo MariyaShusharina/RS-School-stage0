@@ -448,10 +448,11 @@ header {
 	height: 22px;
 	
 	position: absolute;
-	top: 70px;
-	right: 20px;
+	top: 102px;
+	right: 84px;
 
 	display: flex;
+	flex-derection: column;
 	gap: 8px;
 }
 
