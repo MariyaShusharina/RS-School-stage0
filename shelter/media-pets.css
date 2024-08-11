@@ -98,13 +98,15 @@
 	.pets-cards {
 		min-width: 270px;
 		max-width: 270px;
+		min-height: 1390px;
+		max-height: 1390px;
 		margin-top: -30px;
 		gap: 30px;
 	}
 
 	.pagination { 
 		gap: 9px;
-		margin: -2px 0 -36px -10px;
+		margin: -37px 15px 40px;
 	}
 
 	.footer-h3 {
