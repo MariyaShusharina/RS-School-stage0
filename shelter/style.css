@@ -35,11 +35,11 @@ a {
 
 .pets {
 	padding: 0 40px;
+	max-width: 1440px;
 }
 
 header {
 	max-width: 1440px;
-	padding: 0 40px;
 }
 
 .left-container {
