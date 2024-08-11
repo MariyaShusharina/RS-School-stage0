@@ -656,11 +656,17 @@ footer {
 	.in-addition { flex-direction: column-reverse; }
 	.img-not-only { 
 		max-width: 569px;
-		max-height: auto;
+		max-height: 593px;
+		min-width: 260px;
+		min-height: 272px;
 	}
 	
 }
 	
 @media screen and (max-width: 321px) {
 	div { max-width: 320px; }
-}
+	}
+	.img-not-only { 
+		min-width: 260px;
+		min-height: 272px;
+	}
