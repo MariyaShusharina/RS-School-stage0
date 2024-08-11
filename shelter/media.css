@@ -4,6 +4,8 @@
 		min-width: 698px;
 		min-height: 728px;
 	}
+
+	.burger { display: none; }
 	
 }
 
@@ -13,6 +15,7 @@
 		padding: 0 30px;
 		min-width: 768px;
 	}
+	.burger { display: none; }
 	.container-not-only { flex-direction: column; }
 	.content-not-only {
 		margin: -72px 0 0 10px;
@@ -30,7 +33,7 @@
 	
 @media screen and (max-width: 321px) {
 	div { max-width: 320px; }
-	
+	.burger { display: flex; }
 	.img-not-only {
 		max-width: 80vw;
 	}
