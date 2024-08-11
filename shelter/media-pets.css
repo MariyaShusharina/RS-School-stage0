@@ -108,13 +108,18 @@
 		justify-content: flex-start;
 	}
 	
+	.footer-puppy {
+		width: 260px;
+		height: 269px;
+	}
+	
 	.footer-container {
  		width: 255px;
 		height: 208px;
 		align-items: center;
 
 	}
-
+	
 	.footer-container2 {
 		width: 300px;
 		height: 222px;
