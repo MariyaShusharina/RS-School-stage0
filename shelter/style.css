@@ -316,9 +316,12 @@ header {
 .fr-container {
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: center;
+	align-items: center;
 	gap: 40px;
 }
+
+.fr-btn {
+	padding: 0 45px;
 
 .cards {
 	display: flex;
@@ -329,7 +332,7 @@ header {
 .card {
 	width: 270px;
 	height: 435px;
-	padding: 0;
+	padding-bottom: 30px;
 	gap: 30px;
 	border-radius: 9px;
 	overflow: hidden;
@@ -345,6 +348,7 @@ header {
 
 .card:hover .btn {
 	background: #FDDCC4;
+	border-color: #FDDCC4;
 }
 
 
@@ -483,6 +487,7 @@ header {
 
 .button-secondary:hover {
 	background: #FDDCC4;
+	border-color: #FDDCC4;
 }
 
 
@@ -505,6 +510,7 @@ header {
 	width: 52px;
 	line-height: 52px;
 	border-radius: 100px;
+	background: transparent;
 	border: 2px solid #F1CDB3
 }
 
@@ -514,6 +520,11 @@ header {
 
 .button-paginator:inactive {
 	border: 2px solid #CDCDCD
+}
+
+.button-paginator:hover {
+	background: #FDDCC4;
+	border-color: #FDDCC4;
 }
 
 
