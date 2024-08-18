@@ -462,13 +462,13 @@ header {
 .line-light {
 	min-width: 30px;
 	min-height: 2px;
-	color: #000000;
+	background-color: #000000;
 }
 
 .line-dark {
 	min-width: 30px;
 	min-height: 2px;
-	color: #F1CDB3;
+	background-color: #F1CDB3;
 }
 
 
