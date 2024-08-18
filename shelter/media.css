@@ -149,6 +149,13 @@
 	.img-not-only {
 		max-width: 80vw;
 	}
+
+	.about-photo {
+		max-width: 90vw;
+		max-height: auto;
+		min-width: 90vw;
+		min-height: auto;
+	}
 	
 	.friends {
 		padding: 10px 10px 0;
