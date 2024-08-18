@@ -6,6 +6,8 @@
 	}
 	
 	.burger { visibility: hidden; }
+
+	.pets-cards { max-width: 1469px; }
 	
 	.footer { gap: 160px; }
 }
