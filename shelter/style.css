@@ -38,6 +38,7 @@ a {
 .pets {
 	padding: 0 40px;
 	max-width: 1440px;
+	display: flex;
 }
 
 header {
