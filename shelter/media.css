@@ -78,7 +78,11 @@
 	
 	.button-paginator {
 		font-size: 10px;
-		
+	}
+
+	.cards {
+		max-width: 706px;
+		gap: 42px;
 	}
 
 	.help-icons {
