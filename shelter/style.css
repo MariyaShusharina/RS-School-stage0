@@ -303,6 +303,13 @@ header {
 	gap: 120px;
 }
 
+.about-photo {
+	max-width: 300px;
+	max-height: 408px;
+	min-width: 300px;
+	min-height: 408px;
+}
+
 .about-content {
 	width: 430px;
 }
