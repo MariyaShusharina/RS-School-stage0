@@ -30,10 +30,25 @@
 	}
 	
 }
+
+
+@media screen and (max-width: 767px) {
+	.nav {
+		display: none;
+	}
 	
+	.burger { visibility: visible; }
+}
+
 @media screen and (max-width: 321px) {
 	div { max-width: 320px; }
+	
+	.nav {
+		display: none;
+	}
+	
 	.burger { visibility: visible; }
+	
 	.img-not-only {
 		max-width: 80vw;
 	}
