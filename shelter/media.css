@@ -73,8 +73,16 @@
 	.make-friend { align-self: center; }
 	
 	.about { flex-direction: column-reverse; }
+
+	.help-icons { justify-content: space-between; }
 	
-	.in-addition { flex-direction: column-reverse; }
+	.icon-div { min-width: 160px; }
+	
+	.in-addition {
+		padding-bottom: 60px; 
+		flex-direction: column-reverse;
+		gap: 40px;
+	}
 	
 	.img-not-only { 
 		max-width: 70vw;
