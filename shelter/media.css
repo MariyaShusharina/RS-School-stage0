@@ -47,6 +47,10 @@
 	}
 	
 	.burger { visibility: hidden; }
+
+	.nav {
+		max-width: 710px;
+	}
 	
 	.container-not-only { flex-direction: column; }
 	
