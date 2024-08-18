@@ -4,6 +4,18 @@
 	.img-not-only { 
 		min-width: 698px;
 		min-height: 728px;
+	}
+
+	.burger { visibility: hidden; }
+	
+}
+
+@media screen and (max-width: 1280px) {
+	div, header, .main, .nav, about, friends, help, in-addition, footer { max-width: 90vw; }
+	
+	.img-not-only { 
+		min-width: 698px;
+		min-height: 728px;
 		max-width: 57vw;
 	}
 
@@ -12,27 +24,41 @@
 }
 
 @media screen and (max-width: 769px) {
-	div, header, .main, .nav, footer { max-width: 768px; }
+	div, header, .main, .nav, about, friends, help, in-addition, footer { max-width: 768px; }
+	
 	.main { 
 		padding: 0 30px;
 		min-width: 768px;
 	}
+	
 	.burger { visibility: hidden; }
+	
 	.container-not-only { flex-direction: column; }
+	
 	.content-not-only {
 		margin: -72px 0 0 10px;
 		justify-content: center;
 	}
+	
 	.make-friend { align-self: center; }
+	
 	.about { flex-direction: column-reverse; }
+	
 	.in-addition { flex-direction: column-reverse; }
+	
 	.img-not-only { 
 		max-width: 70vw;
 		min-width: 70vw;
 	}
 	
+	footer {
+		max-width: 748px;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 15px 30px 0;
+		gap: 28px 60px;
+	}
 }
-
 
 @media screen and (max-width: 768px) {
 	.nav {
@@ -43,16 +69,95 @@
 }
 
 @media screen and (max-width: 321px) {
-	div { max-width: 320px; }
+	div, header, .main, .nav, about, friends, help, in-addition, footer { max-width: 320px; }
+	
+	.no-br { display: none;}
+	
+	.header { 
+		padding-top: 15px;
+		padding-bottom: 2px;
+	 }
 	
 	.nav {
 		display: none;
 	}
 	
 	.burger { visibility: visible; }
+
+	.container {
+		max-width: 300px;
+	}
+	
+	.header, footer {
+		padding-left: 20px;
+		padding-right: 20px;
+		min-width: 270px;
+	}
 	
 	.img-not-only {
 		max-width: 80vw;
+	}
+	
+	.friends {
+		padding: 10px 10px 0;
+		gap: 53px;
+		min-width: 270px;
+	}
+	
+	.h3-light {
+		margin: 33px 0 17px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
+
+	.pets-cards {
+		min-width: 270px;
+		max-width: 270px;
+		min-height: 1390px;
+		max-height: 1390px;
+		margin-top: -30px;
+		gap: 30px;
+	}
+
+	.footer-h3 {
+		margin: 0 3px 0 8px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
+
+	.footer {
+		justify-content: flex-start;
+	}
+	
+	.footer-puppy {
+		width: 260px;
+		height: 269px;
+		margin: 0 10px;
+		background-size: contain;
+	}
+	
+	.footer-container {
+ 		width: 275px;
+		height: 208px;
+		align-items: center;
+
+	}
+	
+	.footer-container2 {
+		width: 300px;
+		height: 222px;
+		margin: 0 -11px 12px;
+		padding-top: 12px;
+		gap: 40px;
+
 	}
 }
 
