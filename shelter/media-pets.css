@@ -1,5 +1,8 @@
 @media screen and (min-width: 1282px) {
-	div, header, .main, .nav, about, friends, help, in-addition, footer { max-width: 100vw; }
+	div, .pets, .nav, .friends, .footer {
+	max-width: 100vw;
+	justify-content: center;
+	}
 	
 	.burger { visibility: hidden; }
 }
