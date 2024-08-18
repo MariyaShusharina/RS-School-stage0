@@ -74,12 +74,22 @@
 	
 	.about { flex-direction: column-reverse; }
 
-	.help-icons { justify-content: space-between; }
+	.fr-container { gap: 10px; }
+	
+	.button-paginator {
+		font-size: 10px;
+		
+	}
+
+	.help-icons {
+		justify-content: space-between;
+		gap: 55px 30px;
+	}
 	
 	.icon-div { min-width: 160px; }
 	
 	.in-addition {
-		padding-bottom: 60px; 
+		padding-bottom: 100px; 
 		flex-direction: column-reverse;
 		gap: 40px;
 	}
