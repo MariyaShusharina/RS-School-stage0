@@ -1,3 +1,18 @@
+@media screen and (min-width: 1281px) {
+	div, header, .main, .nav, about, friends, help, in-addition, footer { max-width: 100vw; }
+
+	.container-not-only { justify-content: center; }
+	
+	.img-not-only { 
+		min-width: 698px;
+		min-height: 728px;
+		max-width: 57vw;
+	}
+
+	.burger { visibility: hidden; }
+	
+}
+
 @media screen and (min-width: 1280px) {
 	div, header, .main, .nav, about, friends, help, in-addition, footer { max-width: 1280px; }
 	
