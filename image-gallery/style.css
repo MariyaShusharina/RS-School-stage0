@@ -32,7 +32,7 @@ a:hover { opacity: 0.7; }
 img {
 	width: 25rem;
 	height: 15rem;
-	object-fit: contain;
+	object-fit: cover;
 	border-radius: 0.5rem;
 }
 
@@ -42,9 +42,10 @@ img {
 
 .header {
 	margin: 0;
-	padding: 1.2rem;
+	padding: 1.2rem 5rem;
 	
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -94,13 +95,13 @@ input {
 
 .main {
 	margin: 0;
-	padding: 1.2rem;
+	padding: 1.5rem;
 	
-	display: grid;
-	justify-content: center;
+	display: flex;
+	justify-content: space-evenly;
 	align-items: center;
 	align-content: flex-start;
-	gap: 1rem;
+	gap: 1.5rem;
 }
 
 
@@ -109,7 +110,7 @@ input {
 
 .footer {
 	background: #3b945d;
-	padding: 1.2rem;
+	padding: 1.2rem 5rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -131,8 +132,20 @@ input {
 /*  Media querries  */
 
 
-@media screen and (max-width: 1024px) {  }
+@media screen and (max-width: 1300px) {
 
-@media screen and (max-width: 600px) {  }
+	.header, .footer {
+		padding: 1.2rem 10vw;
+	}
+}
 
-@media screen and (max-width: 500px) {  }
+@media screen and (max-width: 1024px) { }
+
+@media screen and (max-width: 880px) {
+
+	.header { justify-content: center; }
+
+	.footer { justify-content: space-evenly; }
+}
+
+@media screen and (max-width: 500px) { }
