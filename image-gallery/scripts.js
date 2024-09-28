@@ -6,14 +6,19 @@ const main = document.querySelector(".main");
 
 const api = "GuVJqqfGl9C6fsyeYxysRBNNr-DZx0b3FI5w4nJ9wAA";
 let val = "horse";
-val = document.querySelector(".search-box").value;
+// document.querySelector(".search-box").value = val;
 
 const url = "https://api.unsplash.com/search/photos";
 let q = url + "/?query=" + val + "&client_id=" + api + "&tag_mode=all&orientation=landscape&page=2&per_page=18"
 
 async function search() {
 
-	val = document.querySelector(".search-box").value;
+	checkVal = document.querySelector(".search-box").value;
+	
+	if (checkVal != "") {
+		val = document.querySelector(".search-box").value;
+	}
+	
 	q = url + "/?query=" + val + "&client_id=" + api + "&tag_mode=all&orientation=landscape&page=2&per_page=18"
 
 	const result = await fetch(q);
