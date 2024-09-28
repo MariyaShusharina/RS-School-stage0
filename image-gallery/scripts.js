@@ -2,7 +2,7 @@
 const box = document.querySelector(".search-box");
 const lupaBtn = document.querySelector(".search-btn");
 // const pupaBtn = document.querySelector(".reset-btn");
-const = document.querySelector(".main");
+const main = document.querySelector(".main");
 
 const url = "https://api.unsplash.com/search/photos";
 
