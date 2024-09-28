@@ -14,7 +14,7 @@ let q = url + "/?query=" + val + "&client_id=" + api + "&tag_mode=all&orientatio
 async function search() {
 
 	checkVal = document.querySelector(".search-box").value;
-	
+
 	if (checkVal != "") {
 		val = document.querySelector(".search-box").value;
 	}
@@ -40,11 +40,11 @@ function showPhotos(data) {
 
 	main.innerHTML = "";
 
-	for (let i = 0; i < data.length; i++) {
+	for (let i = 0; i < data.results.length; i++) {
 
-		let imgAlt = data[i].alt_description;
-		let imgSrc = data[i].urls.regular;
-		let aHref = data[i].links.html;
+		let imgAlt = data.results[i].alt_description;
+		let imgSrc = data.results[i].urls.regular;
+		let aHref = data.results[i].links.html;
 
 		let link = document.createElement("a");
 		link.setAttribute("href", aHref);
