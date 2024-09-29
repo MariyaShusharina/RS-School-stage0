@@ -72,16 +72,21 @@ img {
 
 input {
 	width: 15rem;
-	height: 1.5rem;
+	height: 2rem;
 	padding: 0.1rem 0.5rem;
 	background: #FFFFFF;
 	border-radius: 1rem;
 }
 
+input[type="search" i]::-webkit-search-cancel-button {
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
 .search-btn {
 	position: absolute;
-	top: 0.6rem;
-	right: 0.6rem;
+	top: 0.65rem;
+	right: 0.65rem;
 	height: 0.7rem;
 	width: 0.7rem;
 	border: none;
