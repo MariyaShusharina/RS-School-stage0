@@ -76,6 +76,8 @@ input {
 	padding: 0.1rem 0.5rem;
 	background: #FFFFFF;
 	border-radius: 1rem;
+	font-family: century gothic;
+    color: #000000;
 	transition: 0.5s;
 }
 
