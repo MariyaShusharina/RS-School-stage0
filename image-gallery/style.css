@@ -82,12 +82,16 @@ input[type="search" i]::-webkit-search-cancel-button {
 	appearance: none;
     width: 0.7rem;
     height: 0.7rem;
-    background: url(./assets/cross.svg);
+    background: url("./assets/cross.svg");
     background-position: center;
     background-size: contain;
 	margin-right: 1.4rem;
 	transition: all 0.4s;
 	cursor: pointer;
+}
+
+input[type="search" i]::-webkit-search-cancel-button:hover {
+	filter: invert(8%) sepia(66%) saturate(7137%) hue-rotate(17deg) brightness(81%) contrast(115%);
 }
 
 .search-btn {
