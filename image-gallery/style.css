@@ -79,16 +79,23 @@ input {
 }
 
 input[type="search" i]::-webkit-search-cancel-button {
-	margin-right: 1rem;
+	appearance: none;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(./assets/cross.svg);
+    background-position: center;
+    background-size: contain;
+	margin-right: 1.4rem;
+	transition: all 0.4s;
 	cursor: pointer;
 }
 
 .search-btn {
 	position: absolute;
-	top: 0.65rem;
+	top: 0.5rem;
 	right: 0.65rem;
-	height: 0.7rem;
-	width: 0.7rem;
+	height: 1rem;
+	width: 1rem;
 	border: none;
 	background-color: transparent;
 	background-image: url("./assets/search.svg");
@@ -96,7 +103,12 @@ input[type="search" i]::-webkit-search-cancel-button {
 	background-position: center;
 	background-size: contain;
 	z-index: 10;
+	transition: all 0.5s;
 	cursor: pointer;
+}
+
+.search-btn:hover {
+    filter: invert(53%) sepia(20%) saturate(1159%) hue-rotate(90deg) brightness(89%) contrast(84%);
 }
 
 .main {
