@@ -8,13 +8,13 @@ const cHeight = canvas.height;
 
 let side = cWidth / cells;
 
-let snake {
+let snake = {
 	x: 0,
 	y: 0,
 
 };
 
-let food {
+let food = {
 	x: 0,
 	y: 0,
 	
