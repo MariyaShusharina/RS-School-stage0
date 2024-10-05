@@ -1,8 +1,8 @@
 /*  General styles  */
 
 @font-face {
-	font-family: century gothic;
-	src: url("./assets/CenturyGothic.ttf");
+	font-family: Atari Classic;
+	src: url("./assets/AtariClassic-gry3.ttf");
 }
 
 body {
@@ -35,7 +35,7 @@ a:hover { opacity: 0.7; }
 .header {
 	margin: 0;
 	padding: 1.2rem 5rem;
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
