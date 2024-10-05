@@ -11,9 +11,17 @@ let food;
 let score = 0;
 let isGameOver = false;
 
-function drawGrid() {
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function drawGrid() {
+
+	set.fillStyle = "#000000";
+	set.fillRect(0, 0, cWidth, cWidth);
+
 	set.lineWidth = 1;
-	set.strokeStyle = "#007755";
+	set.strokeStyle = document.querySelector("body").backgroundColor;
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
 	for (let i = 1; i < cells; i++) {
 		let range = (cWidth / cells) * i;
@@ -21,13 +29,13 @@ function drawGrid() {
 		set.moveTo(range, 0);
 		set.lineTo(range, cHeight);
 		set.stroke();
+		await sleep(500);
 
 		set.beginPath();
 		set.moveTo(0, range);
 		set.lineTo(cWidth, range);
 		set.stroke();
-
-		set.closePath();
+		await sleep(500);
 	}
 }
 
@@ -42,7 +50,6 @@ function randomColor() {
 	let hue = 185;
 
 	hue = Math.floor(Math.random() * 360);
-
 	color = "hsl(" + hue + ", 100%, 50%)";
 }
 
