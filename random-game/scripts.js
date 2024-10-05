@@ -15,11 +15,13 @@ let isGameOver = false;
 let hue = 185;
 let color = "hsl(" + hue + ", 100%, 50%)";
 
+/*
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function drawGrid() {
+async */
+function drawGrid() {
 	set.lineWidth = 1;
 	set.strokeStyle = document.querySelector("body").backgroundColor;
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
@@ -29,13 +31,13 @@ async function drawGrid() {
 		set.moveTo(range, 0);
 		set.lineTo(range, cHeight);
 		set.stroke();
-		await sleep(500);
+		//await sleep(500);
 
 		set.beginPath();
 		set.moveTo(0, range);
 		set.lineTo(cWidth, range);
 		set.stroke();
-		await sleep(500);
+		//await sleep(500);
 	}
 }
 
