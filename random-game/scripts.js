@@ -16,6 +16,7 @@ let hue = 185;
 let color = "hsl(" + hue + ", 100%, 50%)";
 
 const lineColor = document.querySelector("body").style.backgroundColor;
+console.log("lineColor is " + lineColor);
 
 /*
 function sleep(ms) {
@@ -28,7 +29,7 @@ function drawGrid() {
 	set.strokeStyle = lineColor;
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
 	for (let i = 1; i < cells; i++) {
-		let range = (cWidth / cells) * i;
+		let range = side * i;
 		set.beginPath();
 		set.moveTo(range, 0);
 		set.lineTo(range, cHeight);
@@ -46,20 +47,22 @@ function drawGrid() {
 function drawFood() {
 	foodPosition();
 	randomColor();
-	let side = cWidth / cells;
+	
 	set.fillStyle = color;
 	set.fillRect(x, y, side, side);
 }
 
 function foodPosition() {
-	let x = Math.floor(Math.random() * (cells - 1));
-	let y = Math.floor(Math.random() * (cells - 1));
+	let x = side * (Math.floor(Math.random() * (cells - 1)));
+	let y = side * (Math.floor(Math.random() * (cells - 1)));
 	//continue: exeption, where snake is
 }
 
 function randomColor() {
 	hue = Math.floor(Math.random() * 360);
 	color = "hsl(" + hue + ", 100%, 50%)";
+
+	console.log("RandomColor is " + color);
 }
 
 
