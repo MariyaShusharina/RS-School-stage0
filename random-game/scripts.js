@@ -43,6 +43,14 @@ function drawGrid() {
 	}
 }
 
+function drawFood() {
+	foodPosition();
+	randomColor();
+	let side = cWidth / cells;
+	set.fillStyle = color;
+	set.fillRect(x, y, side, side);
+}
+
 function foodPosition() {
 	let x = Math.floor(Math.random() * (cells - 1));
 	let y = Math.floor(Math.random() * (cells - 1));
@@ -54,13 +62,6 @@ function randomColor() {
 	color = "hsl(" + hue + ", 100%, 50%)";
 }
 
-function drawFood() {
-	foodPosition();
-	randomColor();
-	let side = cWidth / cells;
-	set.fillStyle = color;
-	set.fillRect(x, y, side, side);
-}
 
 function initialise() {
 	drawGrid();
