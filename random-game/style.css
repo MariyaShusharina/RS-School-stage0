@@ -21,7 +21,7 @@ body {
 
 p, h1, a {
 	margin: 0;
-	font-family: century gothic;
+	font-family: Atari Classic;
 	color: #FFFFFF;
 	transition: 0.4s;
 }
@@ -83,7 +83,7 @@ a:hover { opacity: 0.7; }
 .footer-logo:hover { opacity: 0.6; }
 
 
-/*  Media querries  */
+/*  Media queries  */
 
 
 @media screen and (max-width: 1300px) {
