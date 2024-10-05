@@ -20,10 +20,6 @@ function sleep(ms) {
 }
 
 async function drawGrid() {
-
-	set.fillStyle = "#000000";
-	set.fillRect(0, 0, cWidth, cWidth);
-
 	set.lineWidth = 1;
 	set.strokeStyle = document.querySelector("body").backgroundColor;
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
