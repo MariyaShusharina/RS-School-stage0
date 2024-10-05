@@ -34,11 +34,13 @@ a:hover { opacity: 0.7; }
 
 .header {
 	margin: 0;
-	padding: 1.2rem 5rem;
+	padding: 2rem 5rem;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	background: #3b945d;
 }
 
 .main {
