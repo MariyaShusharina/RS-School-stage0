@@ -6,8 +6,20 @@ const cells = 20;
 const cWidth = canvas.width;
 const cHeight = canvas.height;
 
-let snake;
-let food;
+let side = cWidth / cells;
+
+let snake {
+	x: 0,
+	y: 0,
+
+};
+
+let food {
+	x: 0,
+	y: 0,
+	
+};
+
 let score = 0;
 let maxScore = 0;
 let isGameOver = false;
