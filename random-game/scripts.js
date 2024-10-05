@@ -15,6 +15,8 @@ let isGameOver = false;
 let hue = 185;
 let color = "hsl(" + hue + ", 100%, 50%)";
 
+const lineColor = document.querySelector("body").style.backgroundColor;
+
 /*
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -23,7 +25,7 @@ function sleep(ms) {
 async */
 function drawGrid() {
 	set.lineWidth = 1;
-	set.strokeStyle = document.querySelector("body").style.backgroundColor;
+	set.strokeStyle = lineColor;
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
 	for (let i = 1; i < cells; i++) {
 		let range = (cWidth / cells) * i;
