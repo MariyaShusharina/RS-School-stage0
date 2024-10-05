@@ -23,7 +23,7 @@ function sleep(ms) {
 async */
 function drawGrid() {
 	set.lineWidth = 1;
-	set.strokeStyle = document.querySelector("body").backgroundColor;
+	set.strokeStyle = document.querySelector("body").style.backgroundColor;
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
 	for (let i = 1; i < cells; i++) {
 		let range = (cWidth / cells) * i;
