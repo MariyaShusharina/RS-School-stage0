@@ -9,6 +9,7 @@ const cHeight = canvas.height;
 let snake;
 let food;
 let score = 0;
+let maxScore = 0;
 let isGameOver = false;
 
 function sleep(ms) {
@@ -46,8 +47,8 @@ function foodPosition() {
 }
 
 function randomColor() {
-	let color = "";
 	let hue = 185;
+	let color = "hsl(" + hue + ", 100%, 50%)";
 
 	hue = Math.floor(Math.random() * 360);
 	color = "hsl(" + hue + ", 100%, 50%)";
