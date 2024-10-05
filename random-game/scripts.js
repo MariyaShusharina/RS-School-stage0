@@ -11,7 +11,7 @@ let food;
 let score = 0;
 let isGameOver = false;
 
-drawGrid() {
+function drawGrid() {
 	set.lineWidth = 1;
 	set.strokeStyle = "#007755";
 	//set.shadowBlur = 0; // (add if it will appear to be necessary)
