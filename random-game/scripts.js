@@ -1,5 +1,5 @@
 
-const canvas = document.querySelection(".field");
+const canvas = document.querySelector(".field");
 const set = canvas.getContext("2d");
 const cells = 20;
 
@@ -30,8 +30,32 @@ drawGrid() {
 	}
 }
 
+function foodPosition() {
+	let x = Math.floor(Math.random() * (cells - 1));
+	let y = Math.floor(Math.random() * (cells - 1));
+	//continue: exeption, where snake is
+}
+
+function randomColor() {
+	let color = "";
+	let hue = 185;
+
+	hue = Math.floor(Math.random() * 360);
+
+	color = "hsl(" + hue + ", 100%, 50%)";
+}
+
+function drawFood() {
+	foodPosition();
+	randomColor();
+	let side = cWidth / cells;
+	set.fillStyle = color;
+	set.fillRect(x, y, side, side);
+}
+
 function initialise() {
 	drawGrid();
+	drawFood();
 }
 
 initialise();
