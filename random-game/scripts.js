@@ -15,8 +15,8 @@ let snake = {
 };
 
 let food = {
-	x: 0,
-	y: 0,
+	x: side * (Math.floor(Math.random() * (cells - 1))),
+	y: side * (Math.floor(Math.random() * (cells - 1))),
 	
 };
 
@@ -57,19 +57,19 @@ function drawGrid() {
 }
 
 function drawFood() {
-	foodPosition();
+	// foodPosition();
 	randomColor();
 	
 	set.fillStyle = color;
 	set.fillRect(x, y, side, side);
 }
-
+/*
 function foodPosition() {
 	let x = side * (Math.floor(Math.random() * (cells - 1)));
 	let y = side * (Math.floor(Math.random() * (cells - 1)));
 	//continue: exeption, where snake is
 }
-
+*/
 function randomColor() {
 	hue = Math.floor(Math.random() * 360);
 	color = "hsl(" + hue + ", 100%, 50%)";
