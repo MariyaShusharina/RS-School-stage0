@@ -27,7 +27,7 @@ let isGameOver = false;
 let hue = 185;
 let color = "hsl(" + hue + ", 100%, 50%)";
 
-const lineColor = document.body.style.backgroundColor;
+let lineColor = document.body.style.backgroundColor;
 console.log("lineColor is " + lineColor);
 
 /*
