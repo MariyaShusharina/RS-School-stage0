@@ -12,6 +12,9 @@ let score = 0;
 let maxScore = 0;
 let isGameOver = false;
 
+let hue = 185;
+let color = "hsl(" + hue + ", 100%, 50%)";
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -47,9 +50,6 @@ function foodPosition() {
 }
 
 function randomColor() {
-	let hue = 185;
-	let color = "hsl(" + hue + ", 100%, 50%)";
-
 	hue = Math.floor(Math.random() * 360);
 	color = "hsl(" + hue + ", 100%, 50%)";
 }
