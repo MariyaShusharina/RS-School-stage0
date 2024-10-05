@@ -8,7 +8,8 @@ const cHeight = canvas.height;
 
 let snake;
 let food;
-let is GameOver = false;
+let score = 0;
+let isGameOver = false;
 
 drawGrid() {
 	set.lineWidth = 1;
