@@ -39,7 +39,7 @@ async */
 function drawGrid() {
 	set.lineWidth = 1;
 	set.strokeStyle = lineColor;
-	//set.shadowBlur = 0; // (add if it will appear to be necessary)
+	
 	for (let i = 1; i < cells; i++) {
 		let range = side * i;
 		set.beginPath();
@@ -57,19 +57,19 @@ function drawGrid() {
 }
 
 function drawFood() {
-	// foodPosition();
+	foodPosition();
 	randomColor();
 	
 	set.fillStyle = color;
 	set.fillRect(x, y, side, side);
 }
-/*
+
 function foodPosition() {
 	let x = side * (Math.floor(Math.random() * (cells - 1)));
 	let y = side * (Math.floor(Math.random() * (cells - 1)));
 	//continue: exeption, where snake is
 }
-*/
+
 function randomColor() {
 	hue = Math.floor(Math.random() * 360);
 	color = "hsl(" + hue + ", 100%, 50%)";
