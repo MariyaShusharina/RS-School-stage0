@@ -67,14 +67,14 @@ function drawGrid() {
 }
 
 function drawTexts() {
-	setTxt.fillStyle = "#71c69d";
+	setTxt.fillStyle = "#FFFFFF";
 	setTxt.font = `50px "Atari Classic"`;
 	setTxt.fillText("Score: ", side, 2.2 * side);
 }
 
 function drawSnake() {
 	for (let i = 0; i < snake.length; i++) {
-		set.fillStyle = "#71c69d";
+		set.fillStyle = "#FFFFFF";
 		set.fillRect(snake[i].x, snake[i].y, side, side);
 	}
 }
