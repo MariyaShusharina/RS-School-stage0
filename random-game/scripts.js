@@ -7,6 +7,8 @@ const cWidth = canvas.width;
 const cHeight = canvas.height;
 
 let side = cWidth / cells;
+let x = 0;
+let y = 0;
 
 let snake = {
 	x: 0,
@@ -57,16 +59,16 @@ function drawGrid() {
 }
 
 function drawFood() {
-	foodPosition(x, y);
+	foodPosition();
 	randomColor();
 	
 	set.fillStyle = color;
 	set.fillRect(x, y, side, side);
 }
 
-function foodPosition(x, y) {
-	let x = side * (Math.floor(Math.random() * (cells - 1)));
-	let y = side * (Math.floor(Math.random() * (cells - 1)));
+function foodPosition() {
+	x = side * (Math.floor(Math.random() * (cells - 1)));
+	y = side * (Math.floor(Math.random() * (cells - 1)));
 	//continue: exeption, where snake is
 }
 
