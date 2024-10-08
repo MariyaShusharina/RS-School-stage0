@@ -105,9 +105,9 @@ function randomColor() {
 
 function initialise() {
 	drawGrid();
-	drawTexts()
 	drawSnake();
 	drawFood();
+	drawTexts();
 }
 
 initialise();
