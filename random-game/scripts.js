@@ -64,7 +64,7 @@ function drawFood() {
 	set.fillRect(x, y, side, side);
 }
 
-function foodPosition() {
+function foodPosition(x, y) {
 	let x = side * (Math.floor(Math.random() * (cells - 1)));
 	let y = side * (Math.floor(Math.random() * (cells - 1)));
 	//continue: exeption, where snake is
