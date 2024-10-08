@@ -3,7 +3,7 @@ const field = document.querySelector(".field");
 const set = field.getContext("2d");
 
 const texts = document.querySelector(".texts");
-const setTxt = field.getContext("2d");
+const setTxt = texts.getContext("2d");
 
 const cells = 20;
 
@@ -17,8 +17,8 @@ let y = 0;
 let snake = [];
 
 snake[0] = {
-	x: 10,
-	y: 10,
+	x: side * 10,
+	y: side * 10,
 };
 
 let food = {
@@ -65,7 +65,7 @@ function drawGrid() {
 
 function drawTexts() {
 	setTxt.fillStyle = "#71c69d";
-	setTxt.font = "50px Atari CLassic";
+	setTxt.font = `50px "Atari CLassic"`;
 	setTxt.fillText("Score: ", side, side);
 }
 
