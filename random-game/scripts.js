@@ -66,6 +66,8 @@ function drawGrid() {
 	}
 }
 
+fontAtari.load().then(drawTexts());
+
 function drawTexts() {
 	setTxt.fillStyle = "#FFFFFF";
 	setTxt.font = `50px "Atari Classic"`;
