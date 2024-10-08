@@ -6,7 +6,6 @@ const field = document.querySelector(".field");
 const set = field.getContext("2d");
 
 const texts = document.querySelector(".texts");
-const setTxt = texts.getContext("2d");
 
 const cells = 20;
 
@@ -66,12 +65,16 @@ function drawGrid() {
 	}
 }
 
-fontAtari.load().then(drawTexts());
-
+/*
 function drawTexts() {
 	setTxt.fillStyle = "#FFFFFF";
 	setTxt.font = `30px "Atari Classic"`;
 	setTxt.fillText("Score: ", side, 2 * side);
+}
+*/
+
+function drawTexts() {
+	texts.textContent = 'Score: ' + score;
 }
 
 function drawSnake() {
