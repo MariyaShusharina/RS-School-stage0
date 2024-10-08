@@ -48,9 +48,20 @@ a:hover { opacity: 0.7; }
 	padding: 1.5rem;
 	
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	gap: 1.5rem;
+}
+
+.texts-div {
+	margin: 1rem;
+	padding: 0.5rem;
+	background-color: #3b945d;
+}
+
+.texts {
+	margin: 0;
 }
 
 .field {
