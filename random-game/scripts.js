@@ -1,19 +1,24 @@
 
-const canvas = document.querySelector(".field");
-const set = canvas.getContext("2d");
+const field = document.querySelector(".field");
+const set = field.getContext("2d");
+
+const texts = document.querySelector(".texts");
+const setTxt = field.getContext("2d");
+
 const cells = 20;
 
-const cWidth = canvas.width;
-const cHeight = canvas.height;
+const cWidth = field.width;
+const cHeight = field.height;
 
 let side = cWidth / cells;
 let x = 0;
 let y = 0;
 
-let snake = {
-	x: 0,
-	y: 0,
+let snake = [];
 
+snake[0] = {
+	x: 10,
+	y: 10,
 };
 
 let food = {
@@ -58,6 +63,19 @@ function drawGrid() {
 	}
 }
 
+function drawTexts() {
+	setTxt.fillStyle = "#71c69d";
+	setTxt.font = "50px Atari CLassic";
+	setTxt.fillText("Score: ", side, side);
+}
+
+function drawSnake() {
+	for (let i = 0; i < snake.length; i++) {
+		set.fillStyle = "#71c69d";
+		set.fillRect(snake[i].x, snake[i].y, side, side);
+	}
+}
+
 function drawFood() {
 	foodPosition();
 	randomColor();
@@ -82,6 +100,8 @@ function randomColor() {
 
 function initialise() {
 	drawGrid();
+	drawTexts()
+	drawSnake();
 	drawFood();
 }
 
