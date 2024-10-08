@@ -1,4 +1,7 @@
 
+const fontAtari = new FontFace("Atari Classic", "url(./assets/AtariClassic-gry3.ttf)");
+document.fonts.add(fontAtari);
+
 const field = document.querySelector(".field");
 const set = field.getContext("2d");
 
@@ -66,7 +69,7 @@ function drawGrid() {
 function drawTexts() {
 	setTxt.fillStyle = "#71c69d";
 	setTxt.font = `50px "Atari Classic"`;
-	setTxt.fillText("Score: ", side, 2 * side);
+	setTxt.fillText("Score: ", side, 2.2 * side);
 }
 
 function drawSnake() {
