@@ -21,7 +21,7 @@ body {
 
 p, h1, a {
 	margin: 0;
-	font-family: Atari Classic;
+	font-family: Atari Classic, sans-serif;
 	color: #FFFFFF;
 	transition: 0.4s;
 }
