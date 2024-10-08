@@ -70,8 +70,8 @@ fontAtari.load().then(drawTexts());
 
 function drawTexts() {
 	setTxt.fillStyle = "#FFFFFF";
-	setTxt.font = `50px "Atari Classic"`;
-	setTxt.fillText("Score: ", side, 2.2 * side);
+	setTxt.font = `30px "Atari Classic"`;
+	setTxt.fillText("Score: ", side, 2 * side);
 }
 
 function drawSnake() {
