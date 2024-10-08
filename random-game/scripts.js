@@ -39,7 +39,7 @@ async */
 function drawGrid() {
 	set.lineWidth = 1;
 	set.strokeStyle = lineColor;
-	
+
 	for (let i = 1; i < cells; i++) {
 		let range = side * i;
 		set.beginPath();
@@ -57,7 +57,7 @@ function drawGrid() {
 }
 
 function drawFood() {
-	foodPosition();
+	foodPosition(x, y);
 	randomColor();
 	
 	set.fillStyle = color;
