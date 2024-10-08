@@ -66,7 +66,7 @@ function drawGrid() {
 function drawTexts() {
 	setTxt.fillStyle = "#71c69d";
 	setTxt.font = `50px "Atari CLassic"`;
-	setTxt.fillText("Score: ", side, side);
+	setTxt.fillText("Score: ", 3 * side, side);
 }
 
 function drawSnake() {
