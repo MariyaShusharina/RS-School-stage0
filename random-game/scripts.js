@@ -5,22 +5,6 @@ document.addEventListener("keydown", course);
 
 document.addEventListener("keydown", prevention);
 
-function prevention(event) {
-	let k = event.keyCode;
-	if (k >= 37 && k <= 40) { event.preventDefault(); }
-}
-
-function course(event) {
-	if ((event.code === "ArrowUp") && (crs != "down")) {
-		crs = "up";
-	} else if ((event.code === "ArrowLeft") && (crs != "right")) {
-		crs = "left";
-	} else if ((event.code === "ArrowRight") && (crs != "left")) {
-		crs = "right";
-	} else if ((event.code === "ArrowDown") && (crs != "up")) {
-		crs = "down";
-	}
-}
 
 const fontAtari = new FontFace("Atari Classic", "url(./assets/AtariClassic-gry3.ttf)");
 document.fonts.add(fontAtari);
@@ -71,6 +55,25 @@ function sleep(ms) {
 }
 
 async */
+
+function prevention(event) {
+	let k = event.keyCode;
+	if (k >= 37 && k <= 40) { event.preventDefault(); }
+}
+
+function course(event) {
+	if ((event.code === "ArrowUp") && (crs != "down")) {
+		crs = "up";
+		console.log("up");
+	} else if ((event.code === "ArrowLeft") && (crs != "right")) {
+		crs = "left";
+	} else if ((event.code === "ArrowRight") && (crs != "left")) {
+		crs = "right";
+	} else if ((event.code === "ArrowDown") && (crs != "up")) {
+		crs = "down";
+	}
+}
+
 function drawGrid() {
 	set.lineWidth = 1;
 	set.strokeStyle = lineColor;
