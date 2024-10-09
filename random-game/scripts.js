@@ -3,6 +3,13 @@ let crs = "";
 
 document.addEventListener("keydown", course);
 
+document.addEventListener("keydown", prevention(evnt));
+
+function prevention(evnt) {
+	let k = evnt.keyCode;
+	if (k >= 37 && k <= 40) { evnt.preventDefault(); }
+}
+
 function course(event) {
 	if ((event.code === "ArrowUp") && (crs !== "down")) {
 		crs = "up";
