@@ -5,19 +5,19 @@ document.addEventListener("keydown", course);
 
 document.addEventListener("keydown", prevention);
 
-function prevention(evnt) {
-	let k = evnt.keyCode;
-	if (k >= 37 && k <= 40) { evnt.preventDefault(); }
+function prevention(event) {
+	let k = event.keyCode;
+	if (k >= 37 && k <= 40) { event.preventDefault(); }
 }
 
 function course(event) {
-	if ((event.code === "ArrowUp") && (crs !== "down")) {
+	if ((event.code === "ArrowUp") && (crs != "down")) {
 		crs = "up";
-	} else if ((event.code === "ArrowLeft") && (crs !== "right")) {
+	} else if ((event.code === "ArrowLeft") && (crs != "right")) {
 		crs = "left";
-	} else if ((event.code === "ArrowRight") && (crs !== "left")) {
+	} else if ((event.code === "ArrowRight") && (crs != "left")) {
 		crs = "right";
-	} else if ((event.code === "ArrowDown") && (crs !== "up")) {
+	} else if ((event.code === "ArrowDown") && (crs != "up")) {
 		crs = "down";
 	}
 }
@@ -45,6 +45,9 @@ snake[0] = {
 	x: side * 10,
 	y: side * 10,
 };
+
+let snakeX = 0;
+let snakeY = 0;
 
 let food = {
 	x: side * (Math.floor(Math.random() * (cells - 1))),
