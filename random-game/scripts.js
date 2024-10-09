@@ -4,13 +4,13 @@ let crs = "";
 document.addEventListener("keydown", course);
 
 function course(event) {
-	if ((event.keyCode === "ArrowUp") && (crs !== "down")) {
+	if ((event.code === "ArrowUp") && (crs !== "down")) {
 		crs = "up";
-	} else if ((event.keyCode === "ArrowLeft") && (crs !== "right")) {
+	} else if ((event.code === "ArrowLeft") && (crs !== "right")) {
 		crs = "left";
-	} else if ((event.keyCode === "ArrowRight") && (crs !== "left")) {
+	} else if ((event.code === "ArrowRight") && (crs !== "left")) {
 		crs = "right";
-	} else if ((event.keyCode === "ArrowDown") && (crs !== "up")) {
+	} else if ((event.code === "ArrowDown") && (crs !== "up")) {
 		crs = "down";
 	}
 }
@@ -151,7 +151,7 @@ function initialise() {
 }
 
 function GAME() {
-	 move();
+	move();
 }
 
 let refresh = setInterval(GAME, 100);
