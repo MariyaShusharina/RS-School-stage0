@@ -3,7 +3,7 @@ let crs = "";
 
 document.addEventListener("keydown", course);
 
-document.addEventListener("keydown", prevention(evnt));
+document.addEventListener("keydown", prevention);
 
 function prevention(evnt) {
 	let k = evnt.keyCode;
