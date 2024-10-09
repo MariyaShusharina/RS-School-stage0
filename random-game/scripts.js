@@ -1,4 +1,20 @@
 
+let crs = "";
+
+document.addEventListener("keydown", course);
+
+function course(event) {
+	if ((event.keyCode === "ArrowUp") && (crs !== "down")) {
+		crs = "up";
+	} else if ((event.keyCode === "ArrowLeft") && (crs !== "right")) {
+		crs = "left";
+	} else if ((event.keyCode === "ArrowRight") && (crs !== "left")) {
+		crs = "right";
+	} else if ((event.keyCode === "ArrowDown") && (crs !== "up")) {
+		crs = "down";
+	}
+}
+
 const fontAtari = new FontFace("Atari Classic", "url(./assets/AtariClassic-gry3.ttf)");
 document.fonts.add(fontAtari);
 
@@ -105,13 +121,40 @@ function randomColor() {
 	console.log("RandomColor is " + color);
 }
 
+function move() {
+	let snakeX = snake[0].x;
+	let snakeY = snake[0].y;
+
+	snake.pop();
+
+	if (crs === "up") { snakeX -= side; }
+	else if (crs === "down") { snakeX += side; }
+	else if (crs === "left") { snakeY -= side; }
+	else if (crs === "right") { snakeY += side; }
+
+	let newHead = {
+		x: snakeX,
+		y: snakeY,
+	};
+
+	snake.unshift(newHead);
+}
+
+
 
 function initialise() {
 	drawGrid();
 	drawSnake();
 	drawFood();
 	drawTexts();
+	move();
 }
+
+function GAME() {
+	 move();
+}
+
+let refresh = setInterval(GAME, 100);
 
 initialise();
 
