@@ -136,8 +136,8 @@ function randomColor() {
 }
 
 function move() {
-	let snakeX = snake[0].x;
-	let snakeY = snake[0].y;
+	snakeX = snake[0].x;
+	snakeY = snake[0].y;
 
 	snake.pop();
 
@@ -152,6 +152,15 @@ function move() {
 	};
 
 	snake.unshift(newHead);
+
+	drawSnake();
+}
+
+function eat() {
+	if (snakeX === food.x && snakeY === food.y) {
+		score++;
+		//continue code: remove food, generate new food, add snake length
+	}
 }
 
 
@@ -166,6 +175,8 @@ function initialise() {
 
 function GAME() {
 	move();
+	eat();
+	drawTexts();
 }
 
 let refresh = setInterval(GAME, 100);
