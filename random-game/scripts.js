@@ -64,9 +64,10 @@ function prevention(event) {
 function course(event) {
 	if ((event.code === "ArrowUp") && (crs != "down")) {
 		crs = "up";
-		console.log("up");
+		console.log(crs);
 	} else if ((event.code === "ArrowLeft") && (crs != "right")) {
 		crs = "left";
+		console.log(crs);
 	} else if ((event.code === "ArrowRight") && (crs != "left")) {
 		crs = "right";
 	} else if ((event.code === "ArrowDown") && (crs != "up")) {
