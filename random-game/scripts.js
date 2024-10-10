@@ -141,10 +141,10 @@ function move() {
 
 	snake.pop();
 
-	if (crs === "up") { snakeX -= side; }
-	else if (crs === "down") { snakeX += side; }
-	else if (crs === "left") { snakeY -= side; }
-	else if (crs === "right") { snakeY += side; }
+	if (crs === "up") { snakeY -= side; }
+	else if (crs === "down") { snakeY += side; }
+	else if (crs === "left") { snakeX -= side; }
+	else if (crs === "right") { snakeX += side; }
 
 	let newHead = {
 		x: snakeX,
