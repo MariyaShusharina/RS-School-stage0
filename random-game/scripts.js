@@ -111,7 +111,7 @@ function drawTexts() {
 function drawSnake() {
 	for (let i = 0; i < snake.length; i++) {
 		set.fillStyle = "#FFFFFF";
-		set.shadowColor = "rgba(255, 255, 255, 0.7";
+		set.shadowColor = "rgba(255, 255, 255, 0.5";
 		set.shadowBlur = 20;
 		set.fillRect(snake[i].x, snake[i].y, side, side);
 	}
@@ -137,7 +137,17 @@ function reDrawFood() {
 function foodPosition() {
 	food.x = side * (Math.floor(Math.random() * cells));
 	food.y = side * (Math.floor(Math.random() * cells));
-	//continue: exeption, where snake is
+
+	for (let j = 0; j < snake.length; j++) {
+		if ( !(!(food.x == snake[j].x) && !(food.y == snake[j].y)) ) { foodPosition(); }
+		/*
+		Notice to rewiewer:
+		
+		I don't have a symbol for "logical OR" on my keyboard,
+		that's why the condition is reverted.
+		
+		*/
+	}
 }
 
 function randomColor() {
