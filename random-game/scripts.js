@@ -111,7 +111,7 @@ function drawTexts() {
 function drawSnake() {
 	for (let i = 0; i < snake.length; i++) {
 		set.fillStyle = "#FFFFFF";
-		set.shadowColor = "rgba(255, 255, 255, 0.3";
+		set.shadowColor = "rgba(255, 255, 255, 0.7";
 		set.shadowBlur = 20;
 		set.fillRect(snake[i].x, snake[i].y, side, side);
 	}
@@ -177,7 +177,7 @@ function eat() {
 		score++;
 		drawFood();
 	} else {
-		set.clearRect(0, 0, 500, 500);
+		//set.clearRect(0, 0, 500, 500);
 		snake.pop();
 	}
 }
