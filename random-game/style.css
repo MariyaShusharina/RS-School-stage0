@@ -182,7 +182,7 @@ button:hover {
 
 .records-show {
 	margin: 50px 0 0;
-
+	width: 440px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
