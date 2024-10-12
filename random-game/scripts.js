@@ -139,14 +139,23 @@ function foodPosition() {
 	food.y = side * (Math.floor(Math.random() * cells));
 
 	for (let j = 0; j < snake.length; j++) {
-		if ( !(!(food.x == snake[j].x) && !(food.y == snake[j].y)) ) { foodPosition(); }
+		if ( !(!(food.x == snake[j].x) && !(food.y == snake[j].y)) ) { foodPosition2(); }
 		/*
 		Notice to rewiewer:
 		
 		I don't have a symbol for "logical OR" on my keyboard,
 		that's why the condition is reverted.
-		
+
 		*/
+	}
+}
+
+function foodPosition2() {
+	food.x = side * (Math.floor(Math.random() * cells));
+	food.y = side * (Math.floor(Math.random() * cells));
+
+	for (let j = 0; j < snake.length; j++) {
+		if ( !(!(food.x == snake[j].x) && !(food.y == snake[j].y)) ) { foodPosition(); }
 	}
 }
 
