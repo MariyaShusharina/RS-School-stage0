@@ -1,4 +1,6 @@
 
+let interval = 100;
+
 let crs = "";
 
 document.addEventListener("keydown", course);
@@ -303,7 +305,7 @@ function showLast() {
 
 	recordsContent.innerHTML = "";
 	recordsContent.style.alignItems = "flex-start";
-	
+
 	for (let s = 0; s < recordsLast.length; s++) {
 
 		let par = document.createElement("p");
@@ -329,6 +331,12 @@ function back() {
 	records.style.visibility = "hidden";
 }
 
+function showSettings() {}
+
+function backSettings() {}
+
+function speedChange(value) { interval = value; }
+
 
 
 function GAME() {
@@ -340,7 +348,7 @@ function GAME() {
 	gameOver();
 }
 
-let refresh = setInterval(GAME, 100);
+let refresh = setInterval(GAME, interval);
 
 function initialise() {
 	
@@ -364,7 +372,7 @@ function initialise() {
 	resultBanner.style.visibility = "hidden";
 	startBanner.style.visibility = "hidden";
 	
-	refresh = setInterval(GAME, 100);
+	refresh = setInterval(GAME, interval);
 
 	move();
 

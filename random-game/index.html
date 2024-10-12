@@ -32,6 +32,7 @@
 				<div class="start">
 					<button class="start-btn" onclick="initialise()">Start!</button>
 					<button onclick="showRecords()">See records</button>
+					<button onclick="showSettings()">Settings</button>
 				</div>
 
 				<div class="result">
@@ -39,6 +40,7 @@
 					<p class="score">Your Score: 0</p>
 					<p class="max-score">Maximum score: 0</p>
 					<button onclick="showRecords()">See records</button>
+					<button onclick="showSettings()">Settings</button>
 					<button onclick="initialise()">Restart</button>
 				</div>
 
@@ -52,6 +54,25 @@
 					</div>
 					<div class="back"><button onclick="back()">Back</button></div>
 				</div>
+
+				<div class="settings">
+					<p>Speed: 
+						<input list="speed" value="100" class="speed-input" onchange="speedChange(this.value)">
+						<datalist id="speed">
+							<option value="100"></option>
+							<option value="150"></option>
+							<option value="200"></option>
+							<option value="250"></option>
+							<option value="300"></option>
+							<option value="350"></option>
+							<option value="400"></option>
+							<option value="450"></option>
+							<option value="500"></option>
+						</datalist>
+					</p>
+					<p>(The more, then slower)</p>
+
+					<div class="back"><button onclick="backSettings()">Back</button></div>
 			</div>
 		</main>
 		
