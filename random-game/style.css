@@ -30,7 +30,7 @@ a:hover { opacity: 0.7; }
 
 
 button {
-	padding: 10px;
+	padding: 15px;
 	background-color: #71c69d;
 	border: none;
 	border-radius: 50%;
@@ -42,6 +42,7 @@ button:hover {
 }
 
 .start-btn {
+	font-size: 1.5rem;
 	padding: 20px;
 }
 
@@ -141,9 +142,9 @@ button:hover {
 	align-items: center;
 	gap: 30px;
 
-	background-color: #015b41;
+	background-color: #3b945d;
 
-	z-idex: 5;
+	z-index: 5;
 }
 
 .start {
