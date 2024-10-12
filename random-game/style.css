@@ -55,7 +55,7 @@ select:focus-visible {
     outline: none;
 }
 
-.speed-input {
+.wide-input {
     padding: 0.5rem 0;
     margin-left: 4px;
 }
@@ -189,7 +189,10 @@ select:focus-visible {
 
 .settings p { margin-left: 40px; }
 
-.settings h2 { margin: 0 30px; }
+.settings h2 {
+	margin: 0 30px;
+    font-size: 1.4rem;
+}
 
 .records {
 	visibility: hidden;
