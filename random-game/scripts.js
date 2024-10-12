@@ -86,6 +86,8 @@ let recordsBest = JSON.parse(localStorage.bestGames);
 const records = document.querySelector(".records");
 const recordsContent = document.querySelector(".records-show");
 
+const settings = document.querySelector(".settings");
+
 /*
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -322,9 +324,13 @@ function back() {
 	records.style.visibility = "hidden";
 }
 
-function showSettings() {}
+function showSettings() {
+	settings.style.visibility = "visible";
+}
 
-function backSettings() {}
+function backSettings() {
+	settings.style.visibility = "hidden";
+}
 
 function speedChange(value) { interval = value; }
 
