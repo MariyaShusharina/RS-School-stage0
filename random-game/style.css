@@ -79,10 +79,31 @@ a:hover { opacity: 0.7; }
 	font-family: Atari Classic, sans-serif;
 }
 
+.layers {
+	position: relative;
+}
+
 .field {
 	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: transparent;
+	z-index: 2;
+}
+
+.grids {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	background-color: #015b41;
 	box-shadow: 0 0 0.3rem #015b41;
+	z-idex: -1;
 }
 
 /*  Footer styles  */

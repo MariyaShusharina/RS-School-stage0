@@ -12,6 +12,9 @@ document.fonts.add(fontAtari);
 const field = document.querySelector(".field");
 const set = field.getContext("2d");
 
+const bg = document.querySelector(".grids");
+const set2 = bg.getContext("2d");
+
 const texts = document.querySelector(".texts");
 
 const cells = 20;
@@ -76,21 +79,21 @@ function course(event) {
 }
 
 function drawGrid() {
-	set.lineWidth = 1;
-	set.strokeStyle = lineColor;
+	set2.lineWidth = 1;
+	set2.strokeStyle = lineColor;
 
 	for (let i = 1; i < cells; i++) {
 		let range = side * i;
-		set.beginPath();
-		set.moveTo(range, 0);
-		set.lineTo(range, cHeight);
-		set.stroke();
+		set2.beginPath();
+		set2.moveTo(range, 0);
+		set2.lineTo(range, cHeight);
+		set2.stroke();
 		//await sleep(500);
 
-		set.beginPath();
-		set.moveTo(0, range);
-		set.lineTo(cWidth, range);
-		set.stroke();
+		set2.beginPath();
+		set2.moveTo(0, range);
+		set2.lineTo(cWidth, range);
+		set2.stroke();
 		//await sleep(500);
 	}
 }
@@ -139,9 +142,11 @@ function move() {
 	snakeX = snake[0].x;
 	snakeY = snake[0].y;
 
-	snake.pop();
+	for (let j = 0; j < snake.length; j++) {
+		set.clearRect(snake[j].x, snake[j].y, side, side);
+	}
 
-	set.clearRect(snakeX, snakeY, side, side);
+	snake.pop();
 
 	if (crs === "up") { snakeY -= side; }
 	else if (crs === "down") { snakeY += side; }
