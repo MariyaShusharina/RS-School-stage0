@@ -50,6 +50,10 @@ let color = "hsl(" + hue + ", 100%, 50%)";
 let lineColor = window.getComputedStyle(document.body).backgroundColor;
 console.log("lineColor is " + lineColor);
 
+const yum = document.querySelector(".yum");
+const endSound = document.querySelector(".end");
+const song = document.querySelector(".song");
+
 /*
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -182,8 +186,13 @@ function move() {
 
 function eat() {
 	if (snakeX === food.x && snakeY === food.y) {
+
+		yum.play();
+
 		score++;
+
 		drawFood();
+
 	} else {
 		snake.pop();
 	}
@@ -192,7 +201,15 @@ function eat() {
 function gameOver() {
 	for (let g = 1; g < snake.length; g++) {
 		if ( (snake[0].x == snake[g].x) && (snake[0].y == snake[g].y) ) {
+
 			clearInterval(refresh);
+
+			endSound.play();
+
+			song.pause();
+			song.currentTime = 0;
+
+			// continue...(EndGame banner and maxScore)
 		}
 	}
 }
@@ -205,6 +222,7 @@ function initialise() {
 	drawFood();
 	drawTexts();
 	move();
+	song.play();
 }
 
 function GAME() {
