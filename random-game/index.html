@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>The Game</title>
+		<title>Snake Game</title>
     
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div><h1>Game</h1></div>
+			<div><h1>The Snake Game</h1></div>
 		</header>
 		
 		<main class="main">
@@ -35,8 +35,10 @@
 				</div>
 
 				<div class="result">
+					<h2>GAME OVER!</h2>
 					<p class="score">Your Score: 0</p>
 					<p class="max-score">Maximum score: 0</p>
+					<button onclick="showRecords()">See records</button>
 					<button onclick="initialise()">Restart</button>
 				</div>
 
@@ -48,6 +50,7 @@
 					<div class="records-show">
 						<p>Choose type, please.</p>
 					</div>
+					<button onclick="back()">Back</button>
 				</div>
 			</div>
 		</main>

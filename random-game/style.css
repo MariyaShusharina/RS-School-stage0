@@ -19,7 +19,7 @@ body {
 	background-color: #007755;
 }
 
-p, h1, a, button {
+p, h1, h2, a, button {
 	margin: 0;
 	font-family: Atari Classic, sans-serif;
 	color: #FFFFFF;
@@ -171,17 +171,19 @@ button:hover {
 }
 
 .records-btns {
-	margin: 0;
+	margin: 50px 0 0;
 
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 
-	gap: 60px;
+	gap: 90px;
 }
 
 .records-show {
+	margin: 50px 0 0;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

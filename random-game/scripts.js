@@ -212,7 +212,7 @@ function teleport() {
 	snakeX = snake[0].x;
 	snakeY = snake[0].y;
 	*/
-	
+
 	if (snakeX < 0) {
 		snakeX = side * (cells - 1);
 	}
@@ -300,6 +300,9 @@ function showRecords() {
 }
 
 function showLast() {
+
+	recordsContent.innerHTML = "";
+
 	for (let s = 0; s < recordsLast.length; s++) {
 
 		let par = document.createElement("p");
@@ -309,12 +312,19 @@ function showLast() {
 }
 
 function showBest() {
+
+	recordsContent.innerHTML = "";
+	
 	for (let s = 0; s < recordsBest.length; s++) {
 
 		let par = document.createElement("p");
 		par.textContent = recordsBest[s];
 		recordsContent.appendChild(par);
 	}	
+}
+
+function back() {
+	records.style.visibility = "hidden";
 }
 
 
