@@ -56,28 +56,34 @@
 				</div>
 
 				<div class="settings">
-					<p>Speed: 
+					<p>Refresh speed: 
 						<select class="speed-input" onchange="speedChange(this.value)">
-							<option value="100"></option>
-							<option value="150"></option>
-							<option value="200"></option>
-							<option value="250"></option>
-							<option value="300"></option>
-							<option value="350"></option>
-							<option value="400"></option>
-							<option value="450"></option>
-							<option value="500"></option>
+							<option value="100">100ms</option>
+							<option value="150">150ms</option>
+							<option value="200">200ms</option>
+							<option value="250">250ms</option>
+							<option value="300">300ms</option>
+							<option value="350">350ms</option>
+							<option value="400">400ms</option>
+							<option value="450">450ms</option>
+							<option value="500">500ms</option>
 						</select>
 					</p>
-					<p>( The more, than slower )</p>
+					<p>( The more the value, than slower the snake )</p>
+
+					<br>
 
 					<p>Volume: 
 						<select class="volume-input" onchange="volumeChange(this.value)">
-							<option value="0"></option>
-							<option value="50"></option>
-							<option value="100"></option>
+							<option value="0.0">0 (mute)</option>
+							<option value="0.5">50%</option>
+							<option value="1.0">100%</option>
 						</select>
 					</p>
+
+					<br>
+
+					<p>Settings apply automaticly</p>
 
 					<div class="back"><button onclick="backSettings()">Back</button></div>
 			</div>
