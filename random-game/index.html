@@ -57,7 +57,7 @@
 
 				<div class="settings">
 					<p>Speed: 
-						<input list="speed" value="100" class="speed-input" onchange="speedChange(this.value)">
+						<input list="speed" min="100" max="1000" step="50" class="speed-input" onchange="speedChange(this.value)">
 						<datalist id="speed">
 							<option value="100"></option>
 							<option value="150"></option>
