@@ -63,6 +63,8 @@ const yum = document.querySelector(".yum");
 const endSound = document.querySelector(".end");
 const song = document.querySelector(".song");
 
+song.volume = 0.5;
+
 
 let lastGames = [];
 
@@ -333,6 +335,8 @@ function backSettings() {
 }
 
 function speedChange(value) { interval = value; }
+
+function volumeChange(value) { song.volume = value; }
 
 
 
