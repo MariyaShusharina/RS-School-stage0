@@ -195,6 +195,8 @@ function move() {
 	else if (crs === "left") { snakeX -= side; }
 	else if (crs === "right") { snakeX += side; }
 
+	teleport();
+
 	let newHead = {
 		x: snakeX,
 		y: snakeY,
@@ -203,6 +205,28 @@ function move() {
 	snake.unshift(newHead);
 
 	drawSnake();
+}
+
+function teleport() {
+
+	snakeX = snake[0].x;
+	snakeY = snake[0].y;
+
+	if (snakeX < 0) {
+		snakeX = side * (cells - 1);
+	}
+
+	if (snakeX > (side * (cells - 1))) {
+		snakeX = 0;
+	}
+
+	if (snakeY < 0) {
+		snakeY = side * (cells - 1);
+	}
+
+	if (snakeY > (side * (cells - 1))) {
+		snakeY = 0;
+	}
 }
 
 function eat() {
