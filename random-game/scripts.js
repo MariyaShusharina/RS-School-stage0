@@ -151,6 +151,8 @@ function move() {
 		y: snakeY,
 	};
 
+	set.clearRect(snakeX, snakeY, side, side);
+
 	snake.unshift(newHead);
 
 	drawSnake();
