@@ -35,8 +35,8 @@ let snakeX = 0;
 let snakeY = 0;
 
 let food = {
-	x: side * (Math.floor(Math.random() * (cells - 1))),
-	y: side * (Math.floor(Math.random() * (cells - 1))),
+	x: side * (Math.floor(Math.random() * cells)),
+	y: side * (Math.floor(Math.random() * cells)),
 	
 };
 
@@ -111,8 +111,8 @@ function drawTexts() {
 function drawSnake() {
 	for (let i = 0; i < snake.length; i++) {
 		set.fillStyle = "#FFFFFF";
-		set.shadowColor = "#FFFFFF";
-		set.shadowBlur = 10;
+		set.shadowColor = "rgba(255, 255, 255, 0.3";
+		set.shadowBlur = 20;
 		set.fillRect(snake[i].x, snake[i].y, side, side);
 	}
 }
@@ -135,8 +135,8 @@ function reDrawFood() {
 }
 
 function foodPosition() {
-	food.x = side * (Math.floor(Math.random() * (cells - 1)));
-	food.y = side * (Math.floor(Math.random() * (cells - 1)));
+	food.x = side * (Math.floor(Math.random() * cells));
+	food.y = side * (Math.floor(Math.random() * cells));
 	//continue: exeption, where snake is
 }
 
@@ -150,11 +150,11 @@ function randomColor() {
 function move() {
 	snakeX = snake[0].x;
 	snakeY = snake[0].y;
-
+	/*
 	for (let j = 0; j < snake.length; j++) {
 		set.clearRect(snake[j].x, snake[j].y, side, side);
 	}
-
+	*/
 	eat();
 
 	if (crs === "up") { snakeY -= side; }
@@ -176,7 +176,10 @@ function eat() {
 	if (snakeX === food.x && snakeY === food.y) {
 		score++;
 		drawFood();
-	} else { snake.pop(); }
+	} else {
+		set.clearRect(0, 0, 500, 500);
+		snake.pop();
+	}
 }
 
 
