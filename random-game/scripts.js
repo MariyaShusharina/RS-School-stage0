@@ -222,6 +222,8 @@ function initialise() {
 	drawFood();
 	drawTexts();
 	move();
+
+	song.muted = false;
 	song.play();
 }
 
