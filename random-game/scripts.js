@@ -208,10 +208,11 @@ function move() {
 }
 
 function teleport() {
-
+	/*
 	snakeX = snake[0].x;
 	snakeY = snake[0].y;
-
+	*/
+	
 	if (snakeX < 0) {
 		snakeX = side * (cells - 1);
 	}
