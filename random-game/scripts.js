@@ -338,6 +338,11 @@ function speedChange(value) { interval = value; }
 
 function volumeChange(value) { song.volume = value; }
 
+function soundsChange(value) {
+	yum.volume = value;
+	end.volume = value;
+}
+
 
 
 function GAME() {

@@ -80,7 +80,14 @@
 						</select>
 					</h2>
 
-					<br>
+					<h2>Sounds volume: 
+						<select class="volume-input" onchange="soundsChange(this.value)">
+							<option value="0.0">0 (mute)</option>
+							<option value="0.2">20%</option>
+							<option value="0.5">50%</option>
+							<option value="1.0" selected>100%</option>
+						</select>
+					</h2>
 
 					<p>Settings apply automaticly</p>
 
