@@ -61,6 +61,29 @@ const yum = document.querySelector(".yum");
 const endSound = document.querySelector(".end");
 const song = document.querySelector(".song");
 
+
+let lastGames = [];
+
+for (let a = 0; a < 10; a++) {
+	lastGames[a] = "0";
+}
+
+localStorage.setItem("lastGames", JSON.stringify(lastGames));
+
+let bestGames = [];
+
+for (let b = 0; b < 10; b++) {
+	bestGames[b] = "0";
+}
+
+localStorage.setItem("bestGames", JSON.stringify(bestGames));
+
+let recordsLast = JSON.parse(localStorage.lastGames);
+let recordsBest = JSON.parse(localStorage.bestGames);
+
+const records = document.querySelector(".records");
+const recordsContent = document.querySelector(".records-show");
+
 /*
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -209,17 +232,64 @@ function gameOver() {
 
 			scorePar.textContent = "Your Score: " + score;
 
-			// continue...(local storage for 10 LAST games)
+			// local storage for 10 LAST games
 
-			if (score > maxScore) { maxScore = score; }
+			lastGames.push(score);
+			lastGames.pop();
+
+			localStorage.lastGames = JSON.stringify(lastGames);
+
+			//recordsLast = JSON.parse(localStorage.lastGames);
+
+
+
+			if (score > maxScore) {
+
+				maxScore = score;
+
+				// local storage for 10 BEST games
+
+				bestGames.push(maxScore);
+				bestGames.sort(function(c, d){ return d - c });
+				bestGames.pop();
+
+				localStorage.bestGames = JSON.stringify(bestGames);
+			}
 
 			maxScorePar.textContent = "Maximum score: " + maxScore;
 
-			// continue...(local storage for 10 BEST games)
+			//recordsBest = JSON.parse(localStorage.bestGames);
 
 			resultBanner.style.visibility = "visible";
 		}
 	}
+}
+
+function showRecords() {
+
+	recordsLast = JSON.parse(localStorage.lastGames);
+	recordsBest = JSON.parse(localStorage.bestGames);
+
+	records.style.visibility = "visible";
+
+}
+
+function showLast() {
+	for (let s = 0; s < recordsLast.length; s++) {
+
+		let par = document.createElement("p");
+		par.textContent = recordsLast[s];
+		recordsContent.appendChild(par);
+	}	
+}
+
+function showBest() {
+	for (let s = 0; s < recordsBest.length; s++) {
+
+		let par = document.createElement("p");
+		par.textContent = recordsBest[s];
+		recordsContent.appendChild(par);
+	}	
 }
 
 
