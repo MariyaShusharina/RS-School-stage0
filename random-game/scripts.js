@@ -192,7 +192,7 @@ function eat() {
 function gameOver() {
 	for (let g = 1; g < snake.length; g++) {
 		if ( (snake[0].x == snake[g].x) || (snake[0].y == snake[g].y) ) {
-			clearInterval(GAME);
+			clearInterval(refresh);
 		}
 	}
 }
