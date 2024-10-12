@@ -261,8 +261,8 @@ function gameOver() {
 
 			// local storage for 10 LAST games
 
-			lastGames.push(score);
-			lastGames.shift();
+			lastGames.unshift(score);
+			lastGames.pop();
 
 			localStorage.lastGames = JSON.stringify(lastGames);
 
@@ -353,7 +353,7 @@ let refresh = setInterval(GAME, interval);
 
 function initialise() {
 	
-	snake.length = 1;
+	snake.length = 0;
 
 	snake[0] = {
 		x: side * 10,
@@ -379,5 +379,12 @@ function initialise() {
 
 	song.muted = false;
 	song.play();
+
+	recordsContent.innerHTML = "";
+	recordsContent.style.alignItems = "center";
+
+	let par2 = document.createElement("p");
+	par2.textContent = "Choose type, please.";
+	recordsContent.appendChild(par2);
 }
 
