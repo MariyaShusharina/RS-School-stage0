@@ -210,10 +210,6 @@ function move() {
 }
 
 function teleport() {
-	/*
-	snakeX = snake[0].x;
-	snakeY = snake[0].y;
-	*/
 
 	if (snakeX < 0) {
 		snakeX = side * (cells - 1);
@@ -266,9 +262,6 @@ function gameOver() {
 
 			localStorage.lastGames = JSON.stringify(lastGames);
 
-			//recordsLast = JSON.parse(localStorage.lastGames);
-
-
 
 			if (score > maxScore) {
 
@@ -284,8 +277,6 @@ function gameOver() {
 			}
 
 			maxScorePar.textContent = "Maximum score: " + maxScore;
-
-			//recordsBest = JSON.parse(localStorage.bestGames);
 
 			resultBanner.style.visibility = "visible";
 		}
