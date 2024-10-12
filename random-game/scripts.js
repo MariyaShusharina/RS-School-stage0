@@ -50,6 +50,12 @@ let color = "hsl(" + hue + ", 100%, 50%)";
 let lineColor = window.getComputedStyle(document.body).backgroundColor;
 console.log("lineColor is " + lineColor);
 
+const startBanner = document.querySelector(".start");
+const resultBanner = document.querySelector(".result");
+
+const maxScorePar = document.querySelector(".max-score");
+const scorePar = document.querySelector(".score");
+
 const yum = document.querySelector(".yum");
 const endSound = document.querySelector(".end");
 const song = document.querySelector(".song");
@@ -209,7 +215,19 @@ function gameOver() {
 			song.pause();
 			song.currentTime = 0;
 
-			// continue...(EndGame banner and maxScore)
+			scorePar.textContent = "Your Score: " + score;
+
+			// continue...(local storage for 10 LAST games)
+
+			if (score > maxScore) { maxScore = score; }
+
+			score = 0;
+
+			maxScorePar.textContent = "Maximum score: " + maxScore;
+
+			// continue...(local storage for 10 BEST games)
+
+			resultBanner.style.visibility = "visible";
 		}
 	}
 }
@@ -217,6 +235,12 @@ function gameOver() {
 
 
 function initialise() {
+
+	refresh = setInterval(GAME, 100);
+
+	resultBanner.style.visibility = "hidden";
+	startBanner.style.visibility = "hidden";
+
 	drawGrid();
 	drawSnake();
 	drawFood();
@@ -238,5 +262,5 @@ function GAME() {
 
 let refresh = setInterval(GAME, 100);
 
-initialise();
+//initialise();
 
