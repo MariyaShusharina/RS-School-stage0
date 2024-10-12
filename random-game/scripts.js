@@ -23,8 +23,6 @@ const cWidth = field.width;
 const cHeight = field.height;
 
 let side = cWidth / cells;
-let x = 0;
-let y = 0;
 
 let snake = [];
 
@@ -113,6 +111,8 @@ function drawTexts() {
 function drawSnake() {
 	for (let i = 0; i < snake.length; i++) {
 		set.fillStyle = "#FFFFFF";
+		set.shadowColor = "#FFFFFF";
+		set.shadowBlur = 10;
 		set.fillRect(snake[i].x, snake[i].y, side, side);
 	}
 }
@@ -122,12 +122,14 @@ function drawFood() {
 	randomColor();
 	
 	set.fillStyle = color;
-	set.fillRect(x, y, side, side);
+	set.shadowColor = color;
+	set.shadowBlur = 20;
+	set.fillRect(food.x, food.y, side, side);
 }
 
 function foodPosition() {
-	x = side * (Math.floor(Math.random() * (cells - 1)));
-	y = side * (Math.floor(Math.random() * (cells - 1)));
+	food.x = side * (Math.floor(Math.random() * (cells - 1)));
+	food.y = side * (Math.floor(Math.random() * (cells - 1)));
 	//continue: exeption, where snake is
 }
 
@@ -146,7 +148,7 @@ function move() {
 		set.clearRect(snake[j].x, snake[j].y, side, side);
 	}
 
-	snake.pop();
+	eat();
 
 	if (crs === "up") { snakeY -= side; }
 	else if (crs === "down") { snakeY += side; }
@@ -166,8 +168,8 @@ function move() {
 function eat() {
 	if (snakeX === food.x && snakeY === food.y) {
 		score++;
-		//continue code: remove food, generate new food, add snake length
-	}
+		drawFood();
+	} else { snake.pop(); }
 }
 
 
@@ -182,7 +184,6 @@ function initialise() {
 
 function GAME() {
 	move();
-	eat();
 	drawTexts();
 }
 
