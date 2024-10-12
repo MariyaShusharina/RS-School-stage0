@@ -97,23 +97,13 @@ function drawGrid() {
 		set2.moveTo(range, 0);
 		set2.lineTo(range, cHeight);
 		set2.stroke();
-		//await sleep(500);
 
 		set2.beginPath();
 		set2.moveTo(0, range);
 		set2.lineTo(cWidth, range);
 		set2.stroke();
-		//await sleep(500);
 	}
 }
-
-/*
-function drawTexts() {
-	setTxt.fillStyle = "#FFFFFF";
-	setTxt.font = `30px "Atari Classic"`;
-	setTxt.fillText("Score: ", side, 2 * side);
-}
-*/
 
 function drawTexts() {
 	texts.textContent = 'Score: ' + score;
@@ -274,6 +264,4 @@ function initialise() {
 	song.muted = false;
 	song.play();
 }
-
-//initialise();
 
