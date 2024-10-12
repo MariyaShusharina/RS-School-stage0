@@ -302,7 +302,8 @@ function showRecords() {
 function showLast() {
 
 	recordsContent.innerHTML = "";
-
+	recordsContent.style.alignItems = "flex-start";
+	
 	for (let s = 0; s < recordsLast.length; s++) {
 
 		let par = document.createElement("p");
@@ -314,6 +315,7 @@ function showLast() {
 function showBest() {
 
 	recordsContent.innerHTML = "";
+	recordsContent.style.alignItems = "flex-start";
 	
 	for (let s = 0; s < recordsBest.length; s++) {
 
