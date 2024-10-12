@@ -139,14 +139,7 @@ function foodPosition() {
 	food.y = side * (Math.floor(Math.random() * cells));
 
 	for (let j = 0; j < snake.length; j++) {
-		if ( !(!(food.x == snake[j].x) && !(food.y == snake[j].y)) ) { foodPosition2(); }
-		/*
-		Notice to rewiewer:
-		
-		I don't have a symbol for "logical OR" on my keyboard,
-		that's why the condition is reverted.
-
-		*/
+		if ( (food.x == snake[j].x) || (food.y == snake[j].y) ) { foodPosition2(); }
 	}
 }
 
@@ -198,7 +191,7 @@ function eat() {
 
 function gameOver() {
 	for (let g = 1; g < snake.length; g++) {
-		if ( !(!(snake[0].x == snake[g].x) && !(snake[0].y == snake[g].y)) ) {
+		if ( (snake[0].x == snake[g].x) || (snake[0].y == snake[g].y) ) {
 			clearInterval(GAME);
 		}
 	}
@@ -220,6 +213,7 @@ function GAME() {
 	reDrawFood();
 	move();
 	drawTexts();
+	gameOver();
 }
 
 let refresh = setInterval(GAME, 100);
