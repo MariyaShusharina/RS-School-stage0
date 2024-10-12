@@ -260,7 +260,7 @@ function gameOver() {
 			// local storage for 10 LAST games
 
 			lastGames.push(score);
-			lastGames.pop();
+			lastGames.shift();
 
 			localStorage.lastGames = JSON.stringify(lastGames);
 
