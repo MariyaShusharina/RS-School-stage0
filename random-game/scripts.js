@@ -234,6 +234,17 @@ function gameOver() {
 
 
 
+function GAME() {
+	set.clearRect(0, 0, 500, 500);
+	drawSnake();
+	reDrawFood();
+	move();
+	drawTexts();
+	gameOver();
+}
+
+let refresh = setInterval(GAME, 100);
+
 function initialise() {
 
 	refresh = setInterval(GAME, 100);
@@ -250,17 +261,6 @@ function initialise() {
 	song.muted = false;
 	song.play();
 }
-
-function GAME() {
-	set.clearRect(0, 0, 500, 500);
-	drawSnake();
-	reDrawFood();
-	move();
-	drawTexts();
-	gameOver();
-}
-
-let refresh = setInterval(GAME, 100);
 
 //initialise();
 
