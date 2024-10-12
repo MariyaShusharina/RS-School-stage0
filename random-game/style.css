@@ -33,8 +33,7 @@ button {
 	padding: 15px;
 	background-color: #71c69d;
 	border: none;
-	border-radius: 50%;
-	filter: drop-shadow(0 0 0.3rem #015b41);
+	filter: drop-shadow(0 0 0.9rem #015b41);
 }
 
 button:hover {
@@ -122,7 +121,7 @@ button:hover {
 	bottom: 0;
 	right: 0;
 	background-color: #015b41;
-	box-shadow: 0 0 0.3rem #015b41;
+	box-shadow: 0 0 0.7rem #015b41;
 	z-index: -1;
 }
 
@@ -138,9 +137,7 @@ button:hover {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
-	gap: 30px;
 
 	background-color: #3b945d;
 
@@ -149,10 +146,16 @@ button:hover {
 
 .start {
 	visibility: visible;
+
+	justify-content: space-evenly;
+	gap: 30px;
 }
 
 .result {
 	visibility: hidden;
+
+	justify-content: center;
+	gap: 60px;
 }
 
 /*  Footer styles  */
