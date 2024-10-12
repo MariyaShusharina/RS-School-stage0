@@ -141,6 +141,8 @@ function move() {
 
 	snake.pop();
 
+	set.clearRect(snakeX, snakeY, side, side);
+
 	if (crs === "up") { snakeY -= side; }
 	else if (crs === "down") { snakeY += side; }
 	else if (crs === "left") { snakeX -= side; }
@@ -150,8 +152,6 @@ function move() {
 		x: snakeX,
 		y: snakeY,
 	};
-
-	set.clearRect(snakeX, snakeY, side, side);
 
 	snake.unshift(newHead);
 
