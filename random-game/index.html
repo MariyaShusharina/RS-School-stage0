@@ -57,8 +57,7 @@
 
 				<div class="settings">
 					<p>Speed: 
-						<input list="speed" min="100" max="1000" step="50" class="speed-input" onchange="speedChange(this.value)">
-						<datalist id="speed">
+						<select class="speed-input" onchange="speedChange(this.value)">
 							<option value="100"></option>
 							<option value="150"></option>
 							<option value="200"></option>
@@ -68,9 +67,17 @@
 							<option value="400"></option>
 							<option value="450"></option>
 							<option value="500"></option>
-						</datalist>
+						</select>
 					</p>
-					<p>(The more, then slower)</p>
+					<p>( The more, than slower )</p>
+
+					<p>Volume: 
+						<select class="volume-input" onchange="volumeChange(this.value)">
+							<option value="0"></option>
+							<option value="50"></option>
+							<option value="100"></option>
+						</select>
+					</p>
 
 					<div class="back"><button onclick="backSettings()">Back</button></div>
 			</div>
