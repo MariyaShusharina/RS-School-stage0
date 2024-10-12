@@ -26,7 +26,7 @@ let side = cWidth / cells;
 
 let snake = [];
 
-let snake[0] = {
+snake[0] = {
 	x: side * 10,
 	y: side * 10,
 };
