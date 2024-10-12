@@ -169,11 +169,7 @@ function randomColor() {
 function move() {
 	snakeX = snake[0].x;
 	snakeY = snake[0].y;
-	/*
-	for (let j = 0; j < snake.length; j++) {
-		set.clearRect(snake[j].x, snake[j].y, side, side);
-	}
-	*/
+	
 	eat();
 
 	if (crs === "up") { snakeY -= side; }
@@ -196,7 +192,6 @@ function eat() {
 		score++;
 		drawFood();
 	} else {
-		//set.clearRect(0, 0, 500, 500);
 		snake.pop();
 	}
 }
