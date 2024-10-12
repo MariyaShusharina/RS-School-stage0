@@ -127,6 +127,13 @@ function drawFood() {
 	set.fillRect(food.x, food.y, side, side);
 }
 
+function reDrawFood() {
+	set.fillStyle = color;
+	set.shadowColor = color;
+	set.shadowBlur = 20;
+	set.fillRect(food.x, food.y, side, side);
+}
+
 function foodPosition() {
 	food.x = side * (Math.floor(Math.random() * (cells - 1)));
 	food.y = side * (Math.floor(Math.random() * (cells - 1)));
@@ -173,7 +180,7 @@ function eat() {
 }
 
 
-/*
+
 function initialise() {
 	drawGrid();
 	drawSnake();
@@ -181,17 +188,16 @@ function initialise() {
 	drawTexts();
 	move();
 }
-*/
 
 function GAME() {
-	drawGrid();
+	set.clearRect(0, 0, 500, 500);
 	drawSnake();
-	drawFood();
+	reDrawFood();
 	move();
 	drawTexts();
 }
 
 let refresh = setInterval(GAME, 100);
 
-GAME();
+initialise();
 
