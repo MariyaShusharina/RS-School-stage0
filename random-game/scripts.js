@@ -267,7 +267,7 @@ function gameOver() {
 			localStorage.lastGames = JSON.stringify(lastGames);
 
 
-			if (score > maxScore) {
+			if (score >= maxScore) {
 
 				maxScore = score;
 
