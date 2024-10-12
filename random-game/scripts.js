@@ -26,7 +26,7 @@ let side = cWidth / cells;
 
 let snake = [];
 
-snake[0] = {
+let snake[0] = {
 	x: side * 10,
 	y: side * 10,
 };
@@ -223,8 +223,6 @@ function gameOver() {
 
 			if (score > maxScore) { maxScore = score; }
 
-			score = 0;
-
 			maxScorePar.textContent = "Maximum score: " + maxScore;
 
 			// continue...(local storage for 10 BEST games)
@@ -248,16 +246,29 @@ function GAME() {
 let refresh = setInterval(GAME, 100);
 
 function initialise() {
+	
+	snake.length = 1;
 
-	refresh = setInterval(GAME, 100);
+	snake[0] = {
+		x: side * 10,
+		y: side * 10,
+	};
 
-	resultBanner.style.visibility = "hidden";
-	startBanner.style.visibility = "hidden";
+	snakeX = 0;
+	snakeY = 0;
+
+	score = 0;
 
 	drawGrid();
 	drawSnake();
 	drawFood();
 	drawTexts();
+
+	resultBanner.style.visibility = "hidden";
+	startBanner.style.visibility = "hidden";
+	
+	refresh = setInterval(GAME, 100);
+
 	move();
 
 	song.muted = false;
