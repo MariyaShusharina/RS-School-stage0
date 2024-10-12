@@ -45,6 +45,24 @@ button:hover {
 	padding: 20px;
 }
 
+select {
+	font-family: "Atari Classic", sans-serif;
+    color: #007755;
+    border: none;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+.speed-input {
+    padding: 0.5rem 0;
+    margin-left: 4px;
+}
+
+.volume-input {
+    padding: 0.5rem;
+}
 
 /* Upper body styles */
 
@@ -171,7 +189,7 @@ button:hover {
 
 .settings p { margin-left: 40px; }
 
-.settings h2 { margin-left: 40px; }
+.settings h2 { margin: 0 30px; }
 
 .records {
 	visibility: hidden;
