@@ -53,6 +53,7 @@ console.log("lineColor is " + lineColor);
 const startBanner = document.querySelector(".start");
 const resultBanner = document.querySelector(".result");
 
+const maxScoreDisplay = document.querySelector(".max");
 const maxScorePar = document.querySelector(".max-score");
 const scorePar = document.querySelector(".score");
 
@@ -116,6 +117,7 @@ function drawTexts() {
 
 function drawTexts() {
 	texts.textContent = 'Score: ' + score;
+	maxScoreDisplay.textContent = 'Max Score: ' + maxScore;
 }
 
 function drawSnake() {
