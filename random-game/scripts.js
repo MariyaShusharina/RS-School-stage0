@@ -173,7 +173,7 @@ function eat() {
 }
 
 
-
+/*
 function initialise() {
 	drawGrid();
 	drawSnake();
@@ -181,13 +181,17 @@ function initialise() {
 	drawTexts();
 	move();
 }
+*/
 
 function GAME() {
+	drawGrid();
+	drawSnake();
+	drawFood();
 	move();
 	drawTexts();
 }
 
 let refresh = setInterval(GAME, 100);
 
-initialise();
+GAME();
 
