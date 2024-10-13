@@ -340,7 +340,7 @@ function volumeChange(value) { song.volume = value; }
 
 function soundsChange(value) {
 	yum.volume = value;
-	end.volume = value;
+	endSound.volume = value;
 }
 
 
@@ -354,7 +354,7 @@ function GAME() {
 	gameOver();
 }
 
-let refresh = setInterval(GAME, interval);
+let refresh; // = setInterval(GAME, interval);
 
 function initialise() {
 	
