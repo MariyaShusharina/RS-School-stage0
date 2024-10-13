@@ -266,18 +266,17 @@ function gameOver() {
 
 			localStorage.lastGames = JSON.stringify(lastGames);
 
+			// local storage for 10 BEST games
+
+			bestGames.push(score);
+			bestGames.sort(function(c, d){ return d - c });
+			bestGames.pop();
+
+			localStorage.bestGames = JSON.stringify(bestGames);
 
 			if (score >= maxScore) {
 
 				maxScore = score;
-
-				// local storage for 10 BEST games
-
-				bestGames.push(maxScore);
-				bestGames.sort(function(c, d){ return d - c });
-				bestGames.pop();
-
-				localStorage.bestGames = JSON.stringify(bestGames);
 			}
 
 			maxScorePar.textContent = "Maximum score: " + maxScore;
