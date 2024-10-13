@@ -336,13 +336,17 @@ function showBest() {
 
 	recordsContent.innerHTML = "";
 	recordsContent.style.alignItems = "flex-start";
+
+	let orderedList = document.createElement("ol");
 	
 	for (let s = 0; s < recordsBest.length; s++) {
 
-		let par = document.createElement("p");
-		par.textContent = recordsBest[s];
-		recordsContent.appendChild(par);
-	}	
+		let li = document.createElement("li");
+		li.textContent = recordsBest[s];
+		orderedList.appendChild(li);
+	}
+
+	recordsContent.appendChild(orderedList);
 }
 
 function back() {
