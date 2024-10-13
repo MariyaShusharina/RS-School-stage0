@@ -308,6 +308,8 @@ function gameOver() {
 
 	resultBanner.style.visibility = "visible";
 	endDiv.style.visibility = "hidden";
+
+	set.clearRect(0, 0, 500, 500);
 }
 
 function showRecords() {
@@ -343,7 +345,7 @@ function showBest() {
 		par.textContent = recordsBest[s];
 		recordsContent.appendChild(par);
 	}	
-	
+
 	/*
 	let orderedList = document.createElement("ol");
 	
