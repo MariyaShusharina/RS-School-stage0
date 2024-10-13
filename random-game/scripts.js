@@ -307,6 +307,7 @@ function gameOver() {
 	maxScorePar.textContent = "Maximum score: " + maxScore;
 
 	resultBanner.style.visibility = "visible";
+	endDiv.style.visibility = "hidden";
 }
 
 function showRecords() {
