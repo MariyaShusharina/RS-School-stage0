@@ -105,14 +105,31 @@ function prevention(event) {
 function course(event) {
 	if ((event.code === "ArrowUp") && (crs != "down")) {
 		crs = "up";
-		console.log(crs);
+		console.log(crs + " (Arrow)");
 	} else if ((event.code === "ArrowLeft") && (crs != "right")) {
 		crs = "left";
-		console.log(crs);
+		console.log(crs + " (Arrow)");
 	} else if ((event.code === "ArrowRight") && (crs != "left")) {
 		crs = "right";
+		console.log(crs + " (Arrow)");
 	} else if ((event.code === "ArrowDown") && (crs != "up")) {
 		crs = "down";
+		console.log(crs + " (Arrow)");
+	}
+
+
+	if ((event.code === "KeyW") && (crs != "down")) {
+		crs = "up";
+		console.log(crs + " (W)");
+	} else if ((event.code === "KeyA") && (crs != "right")) {
+		crs = "left";
+		console.log(crs + " (A)");
+	} else if ((event.code === "KeyD") && (crs != "left")) {
+		crs = "right";
+		console.log(crs + " (D)");
+	} else if ((event.code === "KeyS") && (crs != "up")) {
+		crs = "down";
+		console.log(crs + " (S)");
 	}
 }
 
@@ -142,7 +159,7 @@ function drawTexts() {
 function drawSnake() {
 	for (let i = 0; i < snake.length; i++) {
 		set.fillStyle = "#FFFFFF";
-		set.shadowColor = "rgba(255, 255, 255, 0.5";
+		set.shadowColor = "rgba(255, 255, 255, 0.5)";
 		set.shadowBlur = 20;
 		set.fillRect(snake[i].x, snake[i].y, side, side);
 	}
