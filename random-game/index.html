@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Snake Game</title>
+    
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
+    
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="./assets/favicon.ico">
+	</head>
+	<body>
+		<header class="header">
+			<div><h1>The Snake Game</h1></div>
+		</header>
+		
+		<main class="main">
+			<div class="texts-div" style="font-family: Atari Classic;">
+				<p class="texts">Score: 0</p><p class="max">Max Score: 0</p>
+			</div>
+
+			<div class="audio-div">
+				<audio class="song" src="./assets/sounds/pixel-happy.mp3" muted loop></audio>
+				<audio class="yum" src="./assets/sounds/yum.mp3"></audio>
+				<audio class="end" src="./assets/sounds/end.mp3"></audio>
+			</div>
+
+			<div class="layers">
+				<canvas class="grids" width="500" height="500"></canvas>
+				<canvas class="field" width="500" height="500"></canvas>
+
+				<div class="end-div">
+					<button class="end-btn" onclick="gameOver()">END<br>GAME</button>
+				</div>
+
+				<div class="start">
+					<button class="start-btn" onclick="initialise()">Play!</button>
+					<button onclick="showTutorial()">Tutorial</button>
+					<button onclick="showRecords()">See records</button>
+					<button onclick="showSettings()">Settings</button>
+				</div>
+
+				<div class="result">
+					<h2>GAME OVER!</h2>
+					<p class="score">Your Score: 0</p>
+					<p class="max-score">Maximum score: 0</p>
+					<button onclick="showRecords()">See records</button>
+					<button onclick="showTutorial()">Tutorial</button>
+					<button onclick="showSettings()">Settings</button>
+					<button class="start-btn" onclick="initialise()">Play again!</button>
+				</div>
+
+				<div class="records">
+					<div class="records-btns">
+						<button class="last-btn" onclick="showLast()">Last</button>
+						<button class="best-btn" onclick="showBest()">Best</button>
+					</div>
+					<div class="records-show">
+						<p>Choose type, please.</p>
+					</div>
+					<div class="back"><button onclick="back()">Back</button></div>
+				</div>
+
+				<div class="settings">
+					<h2>Refresh speed:
+						<select class="wide-input" onchange="speedChange(this.value)">
+							<option value="50">50ms</option>
+							<option value="100" selected>100ms</option>
+							<option value="200">200ms</option>
+							<option value="300">300ms</option>
+						</select>
+					</h2>
+					<p>The more the value, than slower the snake</p>
+					
+					<h2>Music volume: 
+						<select class="volume-input" onchange="volumeChange(this.value)">
+							<option value="0.0">0</option>
+							<option value="0.2">20%</option>
+							<option value="0.5" selected>50%</option>
+							<option value="1.0">100%</option>
+						</select>
+					</h2>
+
+					<h2>Sounds volume:
+						<select class="wide-input" onchange="soundsChange(this.value)">
+							<option value="0.0">0</option>
+							<option value="0.2">20%</option>
+							<option value="0.5">50%</option>
+							<option value="1.0" selected>100%</option>
+						</select>
+					</h2>
+
+					<p>Settings apply automaticly</p>
+
+					<div class="back"><button onclick="backSettings()">Back</button></div>
+			</div>
+
+			<div class="tutorial">
+				<div class="tutorial-text">
+					<p>Snake is white. Food is colorful.</p>
+					<p>You can use arrow keys and WASD keys for moving the snake.</p>
+					<p>In the first iteration of game you need to activate snake by pressing any movement key. In all next games the snake begins to crawl by itself.</p>
+					<p>Game Over happens if the snake bites itself, or if the END GAME button is pressed.</p>
+					<p>Borders of game field are safe, the snake just continues to move from opposite edge.</p>
+				</div>
+
+				<div class="back2"><button onclick="backTutorial()">Back</button></div>
+			</div>
+		</main>
+		
+		<footer class="footer">
+			<div><p class="footer-text">2024 <a class="footer-link" href="https://github.com/MariyaShusharina" target="_blank">MariyaShusharina</a></p></div>
+			<div>
+				<a class="footer-link" href="https://rs.school/courses/javascript-ru" target="_blank">
+					<img src="./assets/rss-logo.svg" class="footer-logo" alt="RS School">
+				</a>
+			</div>
+		</footer>
+
+		<script src="./scripts.js"></script>
+	</body>
+</html>

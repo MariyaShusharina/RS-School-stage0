@@ -1,0 +1,322 @@
+/*  General styles  */
+
+@font-face {
+	font-family: Atari Classic;
+	src: url("./assets/AtariClassic-gry3.ttf");
+}
+
+body {
+	min-height: 100vh;
+	min-width: 100vw;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	background-color: #007755;
+}
+
+p, h1, h2, a, button {
+	margin: 0;
+	font-family: Atari Classic, sans-serif;
+	color: #FFFFFF;
+	transition: 0.4s;
+}
+
+a:hover { opacity: 0.7; }
+
+
+button {
+	padding: 15px;
+	background-color: #71c69d;
+	border: none;
+	filter: drop-shadow(0 0 0.9rem #015b41);
+}
+
+button:hover {
+	transform: scale(1.2);
+}
+
+.start-btn {
+	font-size: 1.5rem;
+	padding: 20px;
+}
+
+.end-btn {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 20px;
+}
+
+select {
+	font-family: "Atari Classic", sans-serif;
+    color: #007755;
+    border: none;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+.wide-input {
+    padding: 0.5rem 0;
+    margin-left: 4px;
+}
+
+.volume-input {
+    padding: 0.5rem;
+}
+
+/* Upper body styles */
+
+
+.header {
+	margin: 0;
+	padding: 2rem 5rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: #3b945d;
+}
+
+.main {
+	margin: 0;
+	padding: 1.5rem;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.7rem;
+}
+
+.texts-div {
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 70px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	background-color: #3b945d;
+	box-shadow: 0 0 0.7rem #015b41;
+	
+	font-family: Atari Classic, sans-serif;
+}
+
+.texts {
+	margin: 0;
+	font-family: Atari Classic, sans-serif;
+}
+
+.max {
+	margin: 0;
+	font-family: Atari Classic, sans-serif;
+}
+
+.layers {
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+
+.field {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: transparent;
+	z-index: 2;
+}
+
+.grids {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #015b41;
+	box-shadow: 0 0 0.7rem #015b41;
+	z-index: -1;
+}
+
+.start, .result, .records, .settings, .tutorial {
+	width: 500px;
+	height: 500px;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #3b945d;
+
+	z-index: 5;
+}
+
+.start {
+	visibility: visible;
+
+	justify-content: space-evenly;
+	gap: 30px;
+}
+
+.result {
+	visibility: hidden;
+
+	justify-content: center;
+	gap: 30px;
+}
+
+.settings {
+	visibility: hidden;
+
+	justify-content: space-evenly;
+	align-items: flex-start;
+
+	z-index: 10;
+}
+
+.settings p { margin-left: 40px; }
+
+.settings h2 {
+	margin: 0 30px;
+    font-size: 1.4rem;
+}
+
+.records {
+	visibility: hidden;
+
+	height: 100%;
+
+	justify-content: space-between;
+	align-items: center;
+
+	z-index: 10;
+}
+
+.records-btns {
+	margin: 50px 0 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	gap: 90px;
+}
+
+.records-show {
+	width: 400px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 10px;
+}
+
+.back {
+	margin: 0 0 40px;
+	align-self: center;
+}
+
+.tutorial {
+	visibility: hidden;
+
+	justify-content: space-evenly;
+	align-items: center;
+
+	z-index: 10;
+}
+
+.tutorial-text {
+	padding: 20px;
+
+	display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    line-height: 1.1rem;
+}
+
+.back2 {
+	margin: 0 0 20px;
+	align-self: center;
+}
+
+.end-div {
+	visibility: hidden;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 200px;
+	left: 550px;
+	bottom: 0;
+	right: 0;
+}
+
+/*  Footer styles  */
+
+
+.footer {
+	background: #3b945d;
+	padding: 1.2rem 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.footer-logo {
+	width: 3.4rem;
+	height: 3.4rem;
+	filter: drop-shadow(0 0 0.25em rgba(0, 0, 0, 0.5));
+	opacity: 1;
+	transition: opacity 0.4s;
+}
+
+.footer-logo:hover { opacity: 0.6; }
+
+
+/*  Media queries  */
+
+
+@media screen and (max-width: 1300px) {
+
+	.header, .footer {
+		padding: 1.2rem 10vw;
+	}
+}
+
+@media screen and (max-width: 1024px) { }
+
+@media screen and (max-width: 880px) {
+
+	.header { justify-content: center; }
+
+	.footer { justify-content: space-evenly; }
+}
+
+@media screen and (max-width: 500px) { }
