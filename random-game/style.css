@@ -148,7 +148,7 @@ select:focus-visible {
 	z-index: -1;
 }
 
-.start, .result, .records, .settings {
+.start, .result, .records, .settings, .tutorial {
 	width: 500px;
 	height: 500px;
 
@@ -235,6 +235,15 @@ select:focus-visible {
 .back {
 	margin: 0 0 40px;
 	align-self: center;
+}
+
+.tutorial {
+	visibility: hidden;
+
+	justify-content: space-evenly;
+	align-items: center;
+
+	z-index: 10;
 }
 
 .end-div {

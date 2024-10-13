@@ -90,6 +90,7 @@ const records = document.querySelector(".records");
 const recordsContent = document.querySelector(".records-show");
 
 const settings = document.querySelector(".settings");
+const tutorial = document.querySelector(".tutorial");
 
 /*
 function sleep(ms) {
@@ -379,6 +380,14 @@ function volumeChange(value) { song.volume = value; }
 function soundsChange(value) {
 	yum.volume = value;
 	endSound.volume = value;
+}
+
+function showTutorial() {
+	tutorial.style.visibility = "visible";
+}
+
+function backTutorial() {
+	tutorial.style.visibility = "hidden";
 }
 
 
