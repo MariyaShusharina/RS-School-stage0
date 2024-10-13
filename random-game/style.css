@@ -246,6 +246,15 @@ select:focus-visible {
 	z-index: 10;
 }
 
+.tutorial-text {
+	padding: 20px;
+}
+
+.back2 {
+	margin: 0 0 20px;
+	align-self: center;
+}
+
 .end-div {
 	visibility: hidden;
 
