@@ -55,6 +55,8 @@ console.log("lineColor is " + lineColor);
 const startBanner = document.querySelector(".start");
 const resultBanner = document.querySelector(".result");
 
+const endDiv = document.querySelector(".end-div");
+
 const maxScoreDisplay = document.querySelector(".max");
 const maxScorePar = document.querySelector(".max-score");
 const scorePar = document.querySelector(".score");
@@ -390,6 +392,8 @@ function initialise() {
 	drawSnake();
 	drawFood();
 	drawTexts();
+
+	endDiv.style.visibility = "visible";
 
 	resultBanner.style.visibility = "hidden";
 	startBanner.style.visibility = "hidden";

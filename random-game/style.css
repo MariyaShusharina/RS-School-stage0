@@ -231,6 +231,19 @@ select:focus-visible {
 	align-self: center;
 }
 
+.end-div {
+	visibility: hidden;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 250px;
+	left: 600px;
+	bottom: 0;
+	right: 0;
+}
+
 /*  Footer styles  */
 
 
