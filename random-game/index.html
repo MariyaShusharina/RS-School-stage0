@@ -30,7 +30,7 @@
 				<canvas class="field" width="500" height="500"></canvas>
 
 				<div class="start">
-					<button class="start-btn" onclick="initialise()">Start!</button>
+					<button class="start-btn" onclick="initialise()">Play!</button>
 					<button onclick="showRecords()">See records</button>
 					<button onclick="showSettings()">Settings</button>
 				</div>
@@ -41,7 +41,7 @@
 					<p class="max-score">Maximum score: 0</p>
 					<button onclick="showRecords()">See records</button>
 					<button onclick="showSettings()">Settings</button>
-					<button onclick="initialise()">Restart</button>
+					<button onclick="initialise()">Replay!</button>
 				</div>
 
 				<div class="records">
@@ -58,13 +58,11 @@
 				<div class="settings">
 					<h2>Refresh speed:
 						<select class="wide-input" onchange="speedChange(this.value)">
-							<option value="100">100ms</option>
+							<option value="25">25ms</option>
+							<option value="50">50ms</option>
+							<option value="100" selected>100ms</option>
 							<option value="200">200ms</option>
 							<option value="300">300ms</option>
-							<option value="400">400ms</option>
-							<option value="500">500ms</option>
-							<option value="750">750ms</option>
-							<option value="1000">1s</option>
 						</select>
 					</h2>
 					<p>The more the value, than slower the snake</p>
