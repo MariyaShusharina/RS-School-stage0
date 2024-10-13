@@ -44,7 +44,6 @@ let food = {
 
 let score = 0;
 let maxScore = 0;
-let isGameOver = false;
 
 let hue = 185;
 let color = "hsl(" + hue + ", 100%, 50%)";
@@ -265,44 +264,49 @@ function eat() {
 	}
 }
 
-function gameOver() {
+function gameOverCollision() {
 	for (let g = 1; g < snake.length; g++) {
 		if ( (snake[0].x == snake[g].x) && (snake[0].y == snake[g].y) ) {
 
-			clearInterval(refresh);
-
-			endSound.play();
-
-			song.pause();
-			song.currentTime = 0;
-
-			scorePar.textContent = "Your Score: " + score;
-
-			// local storage for 10 LAST games
-
-			lastGames.unshift(score);
-			lastGames.pop();
-
-			localStorage.lastGames = JSON.stringify(lastGames);
-
-			// local storage for 10 BEST games
-
-			bestGames.push(score);
-			bestGames.sort(function(c, d){ return d - c });
-			bestGames.pop();
-
-			localStorage.bestGames = JSON.stringify(bestGames);
-
-			if (score >= maxScore) {
-
-				maxScore = score;
-			}
-
-			maxScorePar.textContent = "Maximum score: " + maxScore;
-
-			resultBanner.style.visibility = "visible";
+			gameOver();
 		}
 	}
+}
+
+function gameOver() {
+
+	clearInterval(refresh);
+
+	endSound.play();
+
+	song.pause();
+	song.currentTime = 0;
+
+	scorePar.textContent = "Your Score: " + score;
+
+	// local storage for 10 LAST games
+
+	lastGames.unshift(score);
+	lastGames.pop();
+
+	localStorage.lastGames = JSON.stringify(lastGames);
+
+	// local storage for 10 BEST games
+
+	bestGames.push(score);
+	bestGames.sort(function(c, d){ return d - c });
+	bestGames.pop();
+
+	localStorage.bestGames = JSON.stringify(bestGames);
+
+	if (score >= maxScore) {
+
+		maxScore = score;
+	}
+
+	maxScorePar.textContent = "Maximum score: " + maxScore;
+
+	resultBanner.style.visibility = "visible";
 }
 
 function showRecords() {
@@ -369,7 +373,7 @@ function GAME() {
 	reDrawFood();
 	move();
 	drawTexts();
-	gameOver();
+	gameOverCollision();
 }
 
 let refresh; // = setInterval(GAME, interval);
