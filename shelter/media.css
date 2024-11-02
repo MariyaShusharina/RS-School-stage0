@@ -1,10 +1,12 @@
 @media screen and (min-width: 1280px) {
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
+	
 	.burger { visibility: hidden; }
 }
 
 @media screen and (max-width: 1280px) {
 	div, header, .main, .nav, footer { max-width: 100vw; }
+
 	.img-not-only { 
 		min-width: 698px;
 		min-height: 728px;
@@ -30,19 +32,30 @@
 
 @media screen and (max-width: 769px) {
 	div, header, .main, .nav, footer { max-width: 100vw; }
+
 	.main { 
 		padding: 0 30px;
 		min-width: 100vw;
 	}
+
 	.burger { visibility: hidden; }
-	.container-not-only { flex-direction: column; }
+
+	.container-not-only {
+		max-height: 985px;
+		flex-direction: column;
+	}
+
 	.content-not-only {
-		margin: -72px 0 0 10px;
+		margin: -48px 0 0 -61px;
 		justify-content: center;
 	}
+
 	.make-friend { align-self: center; }
+
 	.about { flex-direction: column-reverse; }
+
 	.in-addition { flex-direction: column-reverse; }
+
 	.img-not-only { 
 		max-width: 70vw;
 		min-width: 70vw;
@@ -52,13 +65,17 @@
 
 @media screen and (max-width: 767px) and (min-width: 321px) {
 	.nav { display: none; }
+
 	.burger { visibility: visible; }
 }
 	
 @media screen and (max-width: 321px) {
 	div { max-width: 320px; }
+
 	.nav { display: none; }
+
 	.burger { visibility: visible; }
+
 	.img-not-only {
 		max-width: 80vw;
 	}
