@@ -92,6 +92,7 @@ header {
 	min-width: 698px;
 	min-height: 728px;
 	background: url("./assets/img/start-screen-puppy.png");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
