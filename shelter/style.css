@@ -345,12 +345,10 @@ header {
 }
 
 .pets-cards {
-	min-width: 1200px;
-	min-height: 930px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 0 30px;
+	justify-content: center;
+	gap: 30px 40px;
 	overflow: hidden;
 }
 
