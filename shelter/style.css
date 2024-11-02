@@ -69,7 +69,7 @@ header {
 	max-height: 728px;
 	margin-top: 64px;
 	display: flex;
-	gap: 0 30px;
+	gap: 120px 30px;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
