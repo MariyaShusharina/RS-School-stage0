@@ -460,13 +460,13 @@ header {
 .line-light {
 	width: 30px;
 	height: 2px;
-	color: #000000;
+	background-color: #000000;
 }
 
 .line-dark {
 	width: 30px;
 	height: 2px;
-	color: #F1CDB3;
+	background-color: #F1CDB3;
 }
 
 
