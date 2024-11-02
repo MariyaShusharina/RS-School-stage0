@@ -1,6 +1,6 @@
 @media screen and (min-width: 1280px) {
 	div, .pets, .friends, .nav, footer { max-width: 1280px; }
-	
+
 	.burger { visibility: hidden; }
 }
 
@@ -57,8 +57,18 @@
 	.in-addition { flex-direction: column-reverse; }
 
 	.img-not-only { 
-		max-width: 70vw;
-		min-width: 70vw;
+		max-width: 74vw;
+		min-width: 74vw;
+		height: 60rem;
+		min-height: 300px;
+		margin-left: 80px;
+	}
+
+	footer {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 15px 30px 0;
+		gap: 28px 60px;
 	}
 	
 }
@@ -67,6 +77,18 @@
 	.nav { display: none; }
 
 	.burger { visibility: visible; }
+
+	.container-not-only {
+		max-height: 985px;
+	}
+
+	.img-not-only { 
+		max-width: 74vw;
+		min-width: 74vw;
+		height: 74vw;
+		min-height: 74vw;
+		margin-left: 80px;
+	}
 }
 	
 @media screen and (max-width: 321px) {
