@@ -26,16 +26,11 @@
 	.friends, .pets, footer {
 		padding-left: 30px;
 		padding-right: 30px;
-		min-width: 708px;
 	}
 
 	.friends { padding-bottom: 75px; }
 	
 	.pets-cards {
-		min-width: 580px;
-		min-height: 1365px;
-		max-width: 580px;
-		max-height: 1365px;
 		margin-top: -30px;
 		gap: 30px;
 	}
@@ -52,6 +47,7 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 321px) {
+	.nav { display: none; }
 	.burger { visibility: visible; }
 }
 	
