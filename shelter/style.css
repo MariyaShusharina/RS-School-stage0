@@ -646,7 +646,7 @@ footer {
 	background-repeat: repeat;
 	background-color: #262425;
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
