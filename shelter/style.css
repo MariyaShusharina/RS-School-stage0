@@ -57,7 +57,7 @@ header {
 
 .container-logo {
 	position: relative;
-	top: -7px;
+	top: 7px;
 }
 
 .container-elem-centered {
