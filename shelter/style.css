@@ -42,6 +42,8 @@ a {
 
 header {
 	max-width: 1440px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .left-container {
