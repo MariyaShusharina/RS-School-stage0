@@ -23,6 +23,10 @@
 		flex-direction: column;
 	}
 
+	.content-not-only {
+		margin-top: -5vw;
+	}
+
 	.img-not-only {
 		min-width: 45vw;
 		min-height: 40vw;
