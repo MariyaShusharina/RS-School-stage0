@@ -17,9 +17,16 @@
 }
 
 @media screen and (max-width: 1279px) and (min-width: 769px) {
-	.img-not-only { 
-		min-width: 60vw;
-		min-height: 60vh;
+
+	.container-not-only {
+		max-height: 985px;
+		flex-direction: column;
+	}
+
+	.img-not-only {
+		min-width: 45vw;
+		min-height: 40vw;
+		max-width: 60vw;
 	}
 }
 
@@ -35,7 +42,6 @@
 
 	.main { 
 		padding: 0 30px;
-		min-width: 100vw;
 	}
 
 	.burger { visibility: hidden; }
@@ -46,22 +52,55 @@
 	}
 
 	.content-not-only {
-		margin: -48px 0 0 -61px;
+		margin: -48px 0 0 0;
 		justify-content: center;
 	}
 
 	.make-friend { align-self: center; }
 
-	.about { flex-direction: column-reverse; }
+	.about {
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 50px 40px 100px;
+		gap: 55px;
+	}
 
-	.in-addition { flex-direction: column-reverse; }
+	.fr-container {
+		gap: 10px;
+	}
+
+	.cards {
+		gap: 40px;
+		max-width: 76vw;
+	}
+
+	.help {
+		padding: 64px 75px 100px 70px;
+		gap: 40px;
+	}
+
+	.help-icons {
+		    display: grid;
+		    grid-template-columns: auto auto auto;
+		    justify-content: center;
+		    gap: 55px 75px;
+		    align-content: center;
+		    align-items: center;
+		    justify-items: center;
+	}
+
+	.in-addition {
+		flex-direction: column-reverse;
+		padding: 61px 40px 100px;
+		gap: 40px;
+	}
 
 	.img-not-only { 
 		max-width: 74vw;
 		min-width: 74vw;
 		height: 60rem;
 		min-height: 300px;
-		margin-left: 80px;
+		margin-left: 140px;
 	}
 
 	footer {
@@ -99,7 +138,7 @@
 	.burger { visibility: visible; }
 
 	.img-not-only {
-		max-width: 80vw;
+		height: 74vw;
 	}
 }
 
