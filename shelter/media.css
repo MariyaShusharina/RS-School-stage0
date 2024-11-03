@@ -28,6 +28,10 @@
 		min-height: 40vw;
 		max-width: 60vw;
 	}
+
+	.in-addition {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 1055px) and (min-width: 768px) {
@@ -40,6 +44,7 @@
 	.footer {
 		padding: 15px 30px 0;
 		gap: 28px 60px;
+		justify-content: center;
 	}
 }
 

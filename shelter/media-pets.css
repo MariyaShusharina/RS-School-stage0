@@ -16,6 +16,7 @@
 	.footer {
 		padding: 15px 30px 0;
 		gap: 28px 60px;
+		justify-content: center;
 	}
 }
 
@@ -40,6 +41,10 @@
 	.friends { padding-bottom: 75px; }
 	
 	.pets-cards {
+		min-width: 580px;
+		min-height: 1365px;
+		max-width: 580px;
+		max-height: 1365px;
 		margin-top: -30px;
 		gap: 30px;
 	}
