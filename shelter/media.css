@@ -32,6 +32,10 @@
 	.in-addition {
 		flex-wrap: wrap;
 	}
+
+	.cards {
+		gap: 5vw;
+	}
 }
 
 @media screen and (max-width: 1055px) and (min-width: 768px) {
