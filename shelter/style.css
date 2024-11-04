@@ -588,13 +588,14 @@ header {
 
 .button-paginator {
 	width: 52px;
+	min-width: 52px;
 	height: 52px;
 	border-radius: 100px;
 	background: transparent;
 	border: 2px solid #F1CDB3;
 
 	font-family: Georgia;
-	font-size: 20px;
+/*	font-size: 20px; */
 	font-weight: 400;
 	line-height: 23px;
 	letter-spacing: 0.06em;
