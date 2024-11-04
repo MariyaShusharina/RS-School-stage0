@@ -39,6 +39,8 @@
 
 	.cards {
 		gap: 5vw;
+		height: 435px;
+		justify-content: center;
 	}
 }
 
@@ -90,6 +92,7 @@
 	.cards {
 		gap: 40px;
 		max-width: 76vw;
+		justify-content: center;
 	}
 
 	.help {
@@ -146,17 +149,106 @@
 		min-height: 74vw;
 		margin-left: 80px;
 	}
+
+	.pets-cards {
+		min-width: 90vw;
+		max-width: 90vw;
+	}
+
+	.footer-h3 {
+		margin: 0 3px 0 8px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
+
+	.footer-puppy {
+		width: 70vw;
+		height: 70vw;
+		background-size: contain;
+	}
 }
 	
 @media screen and (max-width: 321px) {
-	div { max-width: 320px; }
+
+	div, header, .main, .nav, footer { max-width: 320px; }
 
 	.nav { display: none; }
 
-	.burger { visibility: visible; }
+	.no-br { display: none;}
+
+	.burger { 
+		width: 30px;
+		height: 22px;
+		
+		position: absolute;
+		top: 49px;
+        	right: 21px;
+
+		visibility: visible;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.main, footer {
+		padding-left: 20px;
+		padding-right: 20px;
+		min-width: 270px;
+	}
+
+	.h3-dark {
+		margin: 33px 0 17px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
 
 	.img-not-only {
 		height: 74vw;
+	}
+
+	.footer-h3 {
+		margin: 0 3px 0 8px;
+		font-family: Georgia;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 32.5px;
+		letter-spacing: 0.06em;
+		text-align: center;
+	}
+
+	.footer {
+		justify-content: flex-start;
+	}
+	
+	.footer-puppy {
+		width: 260px;
+		height: 269px;
+		margin: 0 10px;
+		background-size: contain;
+	}
+	
+	.footer-container {
+ 		width: 275px;
+		height: 208px;
+		align-items: center;
+
+	}
+	
+	.footer-container2 {
+		width: 300px;
+		height: 222px;
+		margin: 0 -11px 12px;
+		padding-top: 12px;
+		gap: 40px;
+
 	}
 }
 
