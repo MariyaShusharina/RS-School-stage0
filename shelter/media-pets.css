@@ -1,5 +1,8 @@
 @media screen and (min-width: 1280px) {
-	div, .pets, .friends, .nav, footer { max-width: 1280px; }
+	div, .pets, .friends, .nav, footer {
+		max-width: 1280px;
+	}
+	
 	.burger { visibility: hidden; }
 }
 
@@ -45,7 +48,9 @@
 }
 	
 @media screen and (max-width: 321px) {
-	div, header, .friends, .nav, footer { max-width: 320px; }
+	div, header, .friends, .nav, footer {
+		max-width: 320px;
+	}
 	
 	.no-br { display: none;}
 	
@@ -64,7 +69,7 @@
 		
 		position: absolute;
 		top: 49px;
-        	right: 21px;
+		right: 21px;
 
 		visibility: visible;
 		display: flex;
@@ -146,6 +151,5 @@
 		margin: 0 -11px 12px;
 		padding-top: 12px;
 		gap: 40px;
-
 	}
 }
