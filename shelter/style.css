@@ -25,8 +25,6 @@ a {
 
 .no-br { }
 
-
-
 .main {
 	background-image: url("./assets/img/noise_transparent_2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 	background-repeat: repeat;
@@ -172,6 +170,7 @@ header {
 }
 
 .nav-link-active {
+	cursor: default;
 	position: relative;
 	font-family: Arial;
 	font-size: 15px;
@@ -424,6 +423,7 @@ header {
 }
 
 .link-light-active {
+	cursor: default;
 	position: relative;
 	font-family: Arial;
 	font-size: 15px;
