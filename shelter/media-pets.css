@@ -1,5 +1,5 @@
 @media screen and (min-width: 1280px) {
-	div, .pets, .friends, .nav, footer {
+	.header-pets-container, .friends, .friends-container, .nav {
 		max-width: 1280px;
 	}
 	
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 769px) {
-	div, .pets, .friends { max-width: 768px; }
+	.pets, .friends, .friends-container { max-width: 768px; }
 
 	.burger { visibility: hidden; }
 	
@@ -19,13 +19,13 @@
 		max-width: 708px;
 	}
 	
-	.friends, .pets, footer {
+	.friends, .friends-container, .header-pets-container, footer {
 		padding-left: 30px;
 		padding-right: 30px;
 		min-width: 708px;
 	}
 
-	.friends { padding-bottom: 75px; }
+	.friends, .friends-container { padding-bottom: 75px; }
 	
 	.pets-cards {
 		min-width: 580px;
@@ -48,13 +48,13 @@
 }
 	
 @media screen and (max-width: 321px) {
-	div, header, .friends, .nav, footer {
+	.header, .friends, .friends-container, .nav {
 		max-width: 320px;
 	}
 	
 	.no-br { display: none;}
 	
-	.pets { 
+	.header-pets-container { 
 		padding-top: 15px;
 		padding-bottom: 2px;
 	 }
@@ -81,13 +81,13 @@
 		max-width: 300px;
 	}
 
-	.pets, footer {
+	.header-pets-container, .footer-container {
 		padding-left: 20px;
 		padding-right: 20px;
 		min-width: 270px;
 	}
 
-	.friends {
+	.friends, .friends-container {
 		padding: 10px 10px 0;
 		gap: 53px;
 		min-width: 270px;
