@@ -1,5 +1,5 @@
 @media screen and (min-width: 1280px) {
-	div, header, .main, .nav, footer {
+	.header, .nav {
 		max-width: 1280px;
 	}
 
@@ -9,11 +9,10 @@
 	}
 
 	.burger { visibility: hidden; }
-	
 }
 
 @media screen and (max-width: 769px) {
-	div, header, .main, .nav, footer {
+	.header, .nav {
 		max-width: 768px;
 	}
 	
@@ -39,7 +38,9 @@
 	
 @media screen and (max-width: 321px) {
 	div { max-width: 320px; }
+
 	.burger { visibility: visible; }
+
 	.img-not-only {
 		max-width: 80vw;
 	}
